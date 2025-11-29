@@ -1,0 +1,118 @@
+Suyash Maniyar
+
+(413) 409-9018 | smaniyar@umass.edu
+
+LinkedIn: https://www.linkedin.com/in/maniyar-suyash
+
+GitHub: https://github.com/SuyashManiyar
+
+Portfolio: https://suyashmaniyar.github.io/
+
+Education
+
+University of Massachusetts Amherst — Amherst, MA, USA
+Master of Science in Computer Science
+Expected May 2027
+
+Indian Institute of Technology, Jodhpur — Jodhpur, India
+Bachelor of Technology Electrical Engineering
+Aug 2019 – May 2023
+
+Coursework: Calculus, Statistics, Linear Algebra, Data Structures and Algorithms, Machine Learning, Deep Learning, DLOps, Mobile and Pervasive Computing, Advanced NLP, Software Engineering, Research Study
+
+Selected Publications
+
+AI-Generated Lecture Slides for Improving Slide Element Detection and Retrieval, ICDAR 2025 (Paper Link: https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11
+)
+
+Experience
+Graduate Student Researcher
+
+BioNLP Lab @ UMass Amherst — Guide: Prof. Hong Yu
+Amherst, USA | August 2025 – Present
+
+Designed an ontology-driven self-play framework where dual LLM agents (Q&A) co-evolve to fill biomedical knowledge gaps leveraging ontology data, achieving 12% performance boost over Supervised Fine Tuning.
+
+Implemented post-training alignment techniques like DPO, evidence-aligned RL and enhanced factuality by 8%.
+
+Advanced Data Science Associate
+
+ZS Associates — Pune, India
+November 2024 – July 2025
+
+Developed and deployed a Switch Prediction Model to predict patients switching from ongoing drug treatments using real-world data and ML/DL models (Bayesian classifier, XGBoost, ANN, TabNet).
+
+Delivered 70% precision @ 60% recall; created visualizations, communicated results and SHAP analysis to clients, aiding in optimizing marketing efforts with projected cost savings of up to $500K.
+
+Built patient cohorts using SQL and performed patient archetyping via clustering.
+
+Engineered a dashboard to visualize model results and automate retraining and inference, enabling one-click MLOps.
+
+AI/ML Engineer
+
+Decimal Point Analytics — Mumbai, India
+July 2023 – October 2024
+
+Designed a predictive maintenance pipeline to forecast defects in industrial machinery using time-series models.
+
+Mentored two interns on a Knowledge Distillation and Few-shot Object Detection project.
+
+Built a RAG system for Q&A over PDFs/Excel files using Pinecone, integrating knowledge graphs to get a 9% accuracy boost; used multi-threading to reduce latency by 75%.
+
+Created an agent-based hybrid web scraper by finetuning Llama2 (7B/13B) via LoRA for text extraction and using GPT-4 for code generation, reducing downtime from 12 hours to 3 minutes.
+
+Developed a DALLE-3 pipeline to generate fabric design patterns from textual specifications.
+
+Prototyped multiple GenAI products using open/closed LLMs, FastAPI, Streamlit, and Django.
+
+AI Research Intern — Co-op Program
+
+Raapid AI x IIT Jodhpur — Remote, India
+Sept 2022 – May 2023
+
+Engineered a table detection pipeline by finetuning CascadeTabNet and DIT, achieving 76% mAP.
+
+Applied novel augmentation strategies, improving mAP by 7% on a private gold-standard dataset.
+
+AI/ML Intern
+
+Decimal Point Analytics — Remote, India
+May 2022 – July 2022
+
+Built an end-to-end accident detection and damage segmentation pipeline for CCTV footage.
+
+Conducted experiments with Vision Transformer, YOLO, and other architectures, securing an F1 score of 87%.
+
+Projects
+UniTrade – Campus Marketplace Web Application
+
+GitHub: https://github.com/SuyashManiyar/UniTrade-Campus-Marketplace.git
+
+Sept 2025 – Dec 2025
+
+Developed a campus-exclusive marketplace with bidding support using React.js, Node.js, Express, SQLite.
+
+Implemented personalized search using NLP-based filter generation and product recommendation.
+
+Slide Scribe — Winner at HackUMass XIII
+
+Project Link: https://devpost.com/software/and_then_there_was_light
+
+October 2025
+
+Built a system enabling visually impaired individuals to access slide content through real-time audio narration.
+
+SynSlideGen
+
+Project Link: https://synslidegen.github.io/
+
+Aug 2024 – Feb 2025
+
+Led research on an LLM-driven synthetic slide generation pipeline.
+
+Trained models for slide layout detection and image retrieval, delivering SOTA performance leading to publication.
+
+Technical Skills
+
+Languages: Python, SQL, C/C++, R, Java, JavaScript, HTML/CSS, MATLAB, LaTeX
+Tools: VS Code, Git, Docker, AWS, PyTorch, TensorFlow, Spark, Hadoop, Pandas, Dataiku, MLflow, LangChain, CUDA

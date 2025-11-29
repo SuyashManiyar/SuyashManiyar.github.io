@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Maniyar Suyash</title>
+  <title>Suyash Maniyar</title>
   
   <meta name="author" content="Suyash Maniyar">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,12 +12,27 @@
 </head>
 
 <body>
+  <!-- Navigation Bar -->
+  <nav id="main-nav" class="sticky-nav">
+    <ul class="nav-list">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#research" class="nav-link">Research</a></li>
+      <li><a href="#hackathons" class="nav-link">Projects and Hackathons</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+    </ul>
+  </nav>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="hidden" aria-label="Back to top">↑</button>
+
   <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
     <tbody>
       <tr>
         <td style="padding:0px">
 
-          <!-- Intro Section -->
+          <!-- About Section -->
+          <section id="about">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
             <tbody>
               <tr>
@@ -27,22 +42,26 @@
                   </p>
 
                   <p>
-                    I am a Master’s student in <b>Computer Science</b> at  
-                    <a href="https://www.cics.umass.edu/" target="_blank">University of Massachusetts Amherst</a>.  
+                    I am a Master's student in <b>Computer Science</b> at  
+                    <a href="https://www.cics.umass.edu/" target="_blank">University of Massachusetts Amherst</a> (Expected May 2027).
+                    I completed my Bachelor of Technology in <b>Electrical Engineering</b> from 
+                    <a href="https://www.iitj.ac.in/" target="_blank">Indian Institute of Technology, Jodhpur</a> (2019-2023).
                   </p>
 
                   <p>
-                    In my first semester, I am doing coursework in Advanced Natural Language Processing, Software Engineering and conducting research under <b>Prof. Hong Yu </b>at the  
-                    <a href="https://bio-nlp.github.io/" target="_blank">BioNLP Lab.</a> 
-                     My ongoing work focuses on <b>ontology-driven self-play for Biomedical LLMs</b>,  
-                    where I train large language models on biomedical corpora (PubMed, MIMIC) with ontology-grounded QA loops.
+                    I am currently a <b>Graduate Student Researcher</b> at the 
+                    <a href="https://bio-nlp.github.io/" target="_blank">BioNLP Lab</a> under <b>Prof. Hong Yu</b>.
+                    My research focuses on <b>ontology-driven self-play for Biomedical LLMs</b>,  
+                    where I design frameworks with dual LLM agents (Q&A) that co-evolve to fill biomedical knowledge gaps 
+                    leveraging ontology data, achieving a 12% performance boost over Supervised Fine Tuning. 
+                    I also work on post-training alignment techniques like DPO and evidence-aligned RL, enhancing factuality by 8%.
                   </p>
 
                   <p style="text-align:center">
                     <a href="mailto:smaniyar@umass.edu">smaniyar@umass.edu</a> &nbsp;/&nbsp;
-                    <a href="data/SuyashManiyar_AIMLDS.pdf" target="_blank"><b>Download Resume (PDF)</b></a> &nbsp;/&nbsp;
-                    <a href="https://www.linkedin.com/in/maniyar-suyash">LinkedIn</a> &nbsp;/&nbsp;
-                    <a href="https://github.com/SuyashManiyar">GitHub</a>
+                    <a href="SuyashManiyar_AIMLDS.pdf" target="_blank"><b>Download Resume (PDF)</b></a> &nbsp;/&nbsp;
+                    <a href="https://www.linkedin.com/in/maniyar-suyash" target="_blank">LinkedIn</a> &nbsp;/&nbsp;
+                    <a href="https://github.com/SuyashManiyar" target="_blank">GitHub</a>
                   </p>
                 </td>
 
@@ -54,48 +73,198 @@
               </tr>
             </tbody>
           </table>
+          </section>
 
-          <!-- Publications Section -->
-          <h2>📄 Publications</h2>
+          <!-- Research & Publications Section -->
+          <section id="research" class="animate-on-scroll">
+          <h2>🔬 Research & Publications</h2>
+          
+          <h3>Graduate Student Researcher — BioNLP Lab @ UMass Amherst</h3>
+          <p style="margin-top:-10px;"><i>Guide: Prof. Hong Yu | August 2025 – Present</i></p>
           <ul>
-            <li>
-              <b>AI-Generated Lecture Slides for Improving Slide Element Detection and Retrieval</b>, ICDAR 2025.  
-              <br>
-              <div style="text-align:center;margin:15px 0;">
-                <a href="https://synslidegen.github.io/" target="_blank">
-                  <img src="images/teaser.png" alt="SynSlideGen Teaser" style="width:100%;max-width:700px;border-radius:10px;">
-                </a>
-              </div>
+            <li>Designed an ontology-driven self-play framework where dual LLM agents (Q&A) co-evolve to fill biomedical knowledge gaps leveraging ontology data, achieving 12% performance boost over Supervised Fine Tuning.</li>
+            <li>Implemented post-training alignment techniques like DPO, evidence-aligned RL and enhanced factuality by 8%.</li>
+          </ul>
+
+          <h3>Publications & Research Projects</h3>
+          
+          <!-- SynSlideGen Publication -->
+          <div class="publication-item">
+            <p>
+              <b>AI-Generated Lecture Slides for Improving Slide Element Detection and Retrieval</b><br>
+              <i>ICDAR 2025 | Aug 2024 – Feb 2025</i><br>
+              <a href="https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11" target="_blank">[Paper]</a>
               <a href="https://synslidegen.github.io/" target="_blank">[Project Website]</a>
-            </li>
-          </ul>
+            </p>
+            <p style="margin-top:10px;">
+              Led research on an LLM-driven synthetic slide generation pipeline. Trained models for slide layout detection and image retrieval, delivering SOTA performance.
+            </p>
+            <div style="text-align:center;margin:15px 0;">
+              <a href="https://synslidegen.github.io/" target="_blank">
+                <img src="images/teaser.png" alt="SynSlideGen Teaser" style="width:100%;max-width:700px;border-radius:10px;">
+              </a>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">LLMs</span>
+              <span class="tech-tag">Computer Vision</span>
+            </div>
+          </div>
 
-          <!-- Experience Section -->
-          <h2>💼 Experience</h2>
+          <!-- Data-Driven Haptic Modelling -->
+          <div class="publication-item">
+            <p>
+              <b>🥇 Data-Driven Haptic Modelling</b><br>
+              <i>Indian National Academy of Engineering & Science and Engineering Research Board Youth Conclave 2022 | Aug 2022 – Jan 2023</i><br>
+              <a href="https://drive.google.com/file/d/1v3vZmd0dbtJ0Te6Z9SChsO449UpH4Frp/view?usp=drive_link" target="_blank">[Poster]</a>
+            </p>
+            <ul style="margin-top:10px;">
+              <li>Devised a novel methodology for force modelling of inhomogeneous objects in haptics. Obtained 95% accuracy.</li>
+              <li>Presented "Barycentric Interpolation for Force Modelling on Visco-Elastic Inhomogeneous Objects" and <b>won 1st place</b> at the Youth Conclave 2022.</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">MATLAB</span>
+              <span class="tech-tag">Haptics</span>
+              <span class="tech-tag">Force Modelling</span>
+              <span class="tech-tag">Barycentric Interpolation</span>
+            </div>
+          </div>
+          </section>
 
-          <h3>Advanced Data Science Associate — ZS Associates (Nov 2024 – Jul 2025)</h3>
+          <!-- Hackathons & Projects Section -->
+          <section id="hackathons" class="animate-on-scroll">
+          <h2>Projects & Hackathons 🏆</h2>
+          
+          <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="hackathon">Hackathons</button>
+            <button class="filter-btn" data-filter="personal">Personal Projects</button>
+          </div>
+
+          <div class="projects-container">
+            <!-- Slide Scribe - HackUMass XIII Winner -->
+            <div class="project-card" data-category="hackathon">
+              <div class="project-summary">
+                <h4>🥇 Slide Scribe — Winner at HackUMass XIII</h4>
+                <p class="project-date"><i>October 2025</i></p>
+                <p class="project-brief">Built a system enabling visually impaired individuals to access slide content through real-time audio narration.</p>
+                <button class="expand-btn">Read More</button>
+              </div>
+              <div class="project-details hidden">
+                <p>Developed an accessibility-focused application that converts presentation slides into real-time audio narration, making educational content accessible to visually impaired users. Won first place at HackUMass XIII.</p>
+                <div class="tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Computer Vision</span>
+                  <span class="tech-tag">Text-to-Speech</span>
+                  <span class="tech-tag">Accessibility</span>
+                </div>
+                <a href="https://devpost.com/software/and_then_there_was_light" target="_blank" class="project-link">View on Devpost →</a>
+              </div>
+            </div>
+
+            <!-- UniTrade -->
+            <div class="project-card" data-category="personal">
+              <div class="project-summary">
+                <h4>UniTrade – Campus Marketplace Web Application</h4>
+                <p class="project-date"><i>Sept 2025 – Dec 2025</i></p>
+                <p class="project-brief">Developed a campus-exclusive marketplace with bidding support using React.js, Node.js, Express, SQLite.</p>
+                <button class="expand-btn">Read More</button>
+              </div>
+              <div class="project-details hidden">
+                <p>Created a full-stack web application for campus marketplace with features including bidding system, personalized search using NLP-based filter generation, and product recommendation engine.</p>
+                <div class="tech-stack">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">SQLite</span>
+                  <span class="tech-tag">NLP</span>
+                </div>
+                <a href="https://github.com/SuyashManiyar/UniTrade-Campus-Marketplace.git" target="_blank" class="project-link">View on GitHub →</a>
+              </div>
+            </div>
+          </div>
+          </section>
+
+          <!-- Professional Experience Section -->
+          <section id="experience" class="animate-on-scroll">
+          <h2>💼 Professional Experience</h2>
+
+          <h3>Advanced Data Science Associate — ZS Associates</h3>
+          <p style="margin-top:-10px;"><i>Pune, India | November 2024 – July 2025</i></p>
           <ul>
-            <li>Developed and deployed a Switch Prediction Model using ML/DL on real-world data (projected savings of $500K).</li>
-            <li>Performed Patient Archetyping and Patient Journey modeling using SQL, GMM, XGBoost, Autoencoders.</li>
+            <li>Developed and deployed a Switch Prediction Model to predict patients switching from ongoing drug treatments using real-world data and ML/DL models (Bayesian classifier, XGBoost, ANN, TabNet).</li>
+            <li>Delivered 70% precision @ 60% recall; created visualizations, communicated results and SHAP analysis to clients, aiding in optimizing marketing efforts with projected cost savings of up to $500K.</li>
+            <li>Built patient cohorts using SQL and performed patient archetyping via clustering.</li>
+            <li>Engineered a dashboard to visualize model results and automate retraining and inference, enabling one-click MLOps.</li>
           </ul>
 
-          <h3>Data Scientist — Decimal Point Analytics (Jul 2023 – Oct 2024)</h3>
+          <h3>AI/ML Engineer — Decimal Point Analytics</h3>
+          <p style="margin-top:-10px;"><i>Mumbai, India | July 2023 – October 2024</i></p>
           <ul>
-            <li>Developed RAG systems for enterprise documents, reducing analyst query time by 93%.</li>
-            <li>Integrated knowledge graphs into RAG chatbot (+9% accuracy, –75% latency).</li>
-            <li>Built predictive maintenance models for industrial machinery.</li>
-            <li>Trained diffusion models for generating fabric designs from text prompts.</li>
+            <li>Designed a predictive maintenance pipeline to forecast defects in industrial machinery using time-series models.</li>
+            <li>Mentored two interns on a Knowledge Distillation and Few-shot Object Detection project.</li>
+            <li>Built a RAG system for Q&A over PDFs/Excel files using Pinecone, integrating knowledge graphs to get a 9% accuracy boost; used multi-threading to reduce latency by 75%.</li>
+            <li>Created an agent-based hybrid web scraper by finetuning Llama2 (7B/13B) via LoRA for text extraction and using GPT-4 for code generation, reducing downtime from 12 hours to 3 minutes.</li>
+            <li>Developed a DALLE-3 pipeline to generate fabric design patterns from textual specifications.</li>
+            <li>Prototyped multiple GenAI products using open/closed LLMs, FastAPI, Streamlit, and Django.</li>
           </ul>
 
-          <h3>Artificial Intelligence Researcher — RaapidAI X IIT Jodhpur (Aug 2022 – May 2023)</h3>
+          <h3>AI Research Intern — Co-op Program — Raapid AI x IIT Jodhpur</h3>
+          <p style="margin-top:-10px;"><i>Remote, India | Sept 2022 – May 2023</i></p>
           <ul>
-            <li>Worked on table detection and extraction from medical documents using CascadeTabNet, DETR, DIT (mAP 76%).</li>
+            <li>Engineered a table detection pipeline by finetuning CascadeTabNet and DIT, achieving 76% mAP.</li>
+            <li>Applied novel augmentation strategies, improving mAP by 7% on a private gold-standard dataset.</li>
           </ul>
 
-          <h3>Data Science Intern — Decimal Point Analytics (May 2022 – Jul 2022)</h3>
+          <h3>AI/ML Intern — Decimal Point Analytics</h3>
+          <p style="margin-top:-10px;"><i>Remote, India | May 2022 – July 2022</i></p>
           <ul>
-            <li>Built accident detection and car damage segmentation pipelines using ViT, ConvLSTM, YOLO, DeepSORT (F1 = 87%).</li>
+            <li>Built an end-to-end accident detection and damage segmentation pipeline for CCTV footage.</li>
+            <li>Conducted experiments with Vision Transformer, YOLO, and other architectures, securing an F1 score of 87%.</li>
           </ul>
+          </section>
+
+          <!-- Technical Skills Section -->
+          <section id="skills" class="animate-on-scroll">
+          <h2>🛠️ Technical Skills</h2>
+          
+          <div class="skills-section">
+            <div class="skill-category">
+              <h4 class="category-toggle">Languages <span class="toggle-icon">▼</span></h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">R</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">MATLAB</span>
+                <span class="skill-tag">LaTeX</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4 class="category-toggle">Tools & Frameworks <span class="toggle-icon">▼</span></h4>
+              <div class="skill-tags">
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Spark</span>
+                <span class="skill-tag">Hadoop</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">Dataiku</span>
+                <span class="skill-tag">MLflow</span>
+                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">CUDA</span>
+              </div>
+            </div>
+          </div>
+          </section>
 
           <!-- Footer -->
           <br>
@@ -104,7 +273,7 @@
               <tr>
                 <td style="padding:0px">
                   <p style="text-align:right;font-size:small;">
-                    Template adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
+                    Template adapted from <a href="https://github.com/jonbarron/jonbarron_website" target="_blank">Jon Barron's website</a>.
                   </p>
                 </td>
               </tr>
@@ -115,5 +284,7 @@
       </tr>
     </tbody>
   </table>
+
+  <script src="script.js"></script>
 </body>
 </html>
