@@ -12,7 +12,7 @@ Education
 
 University of Massachusetts Amherst — Amherst, MA, USA
 Master of Science in Computer Science
-Expected May 2027
+Expected May 2027 | CGPA: 4.0/4.0
 
 Indian Institute of Technology, Jodhpur — Jodhpur, India
 Bachelor of Technology Electrical Engineering
@@ -84,6 +84,17 @@ Built an end-to-end accident detection and damage segmentation pipeline for CCTV
 Conducted experiments with Vision Transformer, YOLO, and other architectures, securing an F1 score of 87%.
 
 Projects
+
+Enhancing Legal LLMs through Hybrid Retrieval, Metadata-Enriched RAG Pipelines and Direct Preference Optimization
+
+Course Project Report: https://suyashmaniyar.github.io/Course_Project.pdf
+
+UMass Amherst | Fall 2025
+
+Advanced research project addressing hallucinations in legal LLMs through hybrid retrieval and decoder alignment techniques.
+
+Developed a comprehensive approach to reduce hallucinations in legal Large Language Models by combining metadata-enriched RAG pipelines with Direct Preference Optimization.
+
 UniTrade – Campus Marketplace Web Application
 
 GitHub: https://github.com/SuyashManiyar/UniTrade-Campus-Marketplace.git
