@@ -10,11 +10,11 @@ Portfolio: https://suyashmaniyar.github.io/
 
 Education
 
-University of Massachusetts Amherst — Amherst, MA, USA
+University of Massachusetts Amherst, Amherst, MA, USA
 Master of Science in Computer Science
 Expected May 2027 | CGPA: 4.0/4.0
 
-Indian Institute of Technology, Jodhpur — Jodhpur, India
+Indian Institute of Technology, Jodhpur, Jodhpur, India
 Bachelor of Technology in Electrical Engineering
 Aug 2019 – May 2023 | CGPA: 8.2/10.0
 
@@ -22,15 +22,15 @@ Coursework: Data Structures & Algorithms, Advanced NLP, AI Alignment, Systems fo
 
 Publications and Preprints
 
-Measuring Reward Hacking and Reasoning-Answer Decoupling Under Confounded Optimization, COLM 2026 — https://arxiv.org/abs/2608.15445
-AI-Generated Lecture Slides for Improving Slide Element Detection and Slide Image Retrieval, ICDAR 2025 — https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11
-Enhancing Legal LLMs with Metadata-Enriched Retrieval and DPO, arXiv preprint — https://arxiv.org/abs/2603.19251
+Measuring Reward Hacking and Reasoning-Answer Decoupling Under Confounded Optimization, COLM 2026, https://arxiv.org/abs/2608.15445
+AI-Generated Lecture Slides for Improving Slide Element Detection and Slide Image Retrieval, ICDAR 2025, https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11
+Enhancing Legal LLMs with Metadata-Enriched Retrieval and DPO, arXiv preprint, https://arxiv.org/abs/2603.19251
 
 Professional Experience
 
 Applied AI and Data Science Co-op
 
-Johnson & Johnson MedTech — Danvers, MA, USA
+Johnson & Johnson MedTech, Danvers, MA, USA
 July 2026 – Present
 
 Built a Django human-in-the-loop annotation platform that pre-fills LLM extractions with bounding-box evidence, letting annotators approve or edit rather than label from scratch, cutting annotation time by 80%.
@@ -45,7 +45,7 @@ Fine-tuned open-weight LLMs and VLMs (Llama 3.2 3B/11B) for medical NER on scann
 
 Advanced Data Science Associate
 
-ZS Associates — Pune, India
+ZS Associates, Pune, India
 Nov 2024 – July 2025
 
 Developed a Switch Prediction Model to predict patients switching from ongoing drug treatments, leveraging clinical data and an ensemble of ML (Bayes, XGBoost) and DL (TabNet) models, improving F1 score by 11%.
@@ -60,7 +60,7 @@ Quantified impact of advertisements using A/B testing and Double ML, enabling op
 
 ML Engineer
 
-Decimal Point Analytics — Mumbai, India
+Decimal Point Analytics, Mumbai, India
 July 2023 – Oct 2024
 
 Built an XGBoost supply chain optimization model for a leading FMCG client, forecasting SKU-level demand from lag and rolling-window features engineered in Spark, cutting monthly inventory waste by 15%.
@@ -77,14 +77,14 @@ Compressed few-shot object detection models by 70% using knowledge distillation 
 
 Machine Learning Intern
 
-RaapidAI — Remote, India
+RaapidAI, Remote, India
 Aug 2022 – May 2023
 
 Built a table detection and structure recognition pipeline for medical document images, fine-tuning CascadeTabNet, DETR and DiT to 76% mAP, with augmentation adding 7% on a private gold-standard set.
 
 Research Experience
 
-Reward Hacking Under Position-Confounded RL — COLM 2026 Workshop (https://arxiv.org/abs/2608.15445)
+Reward Hacking Under Position-Confounded RL, COLM 2026 Workshop (https://arxiv.org/abs/2608.15445)
 Feb 2026 – May 2026
 
 Post-trained 10 LLMs (Qwen2.5, Llama 3.x) via GRPO on confounded reward, inducing reward hacking.
@@ -93,7 +93,7 @@ Identified a backdoor-like failure from fully correct training data that endpoin
 
 Red-teamed checkpoints: the hacked model chose the harmful option 84% of the time in the rewarded position vs 4% for controls, and 0% once position-swapped.
 
-Is the Refusal Direction Mostly Harmfulness? — TMLR (review)
+Is the Refusal Direction Mostly Harmfulness?, TMLR (review)
 Feb 2026 – Aug 2026
 
 Reproduced the claim that LLMs encode harmfulness and refusal separately on 8 LLMs (Llama-3, Qwen2.5, Gemma-3, 3B to 27B) using nnsight activation interventions.
@@ -109,7 +109,7 @@ Studied whether LLMs can both learn and unlearn behaviors with LoRA, training 6 
 
 Found all 4 merge strategies collapsed refusal to 0.005; built a zero-parameter centroid router that beat the best merge by up to 52 points and held MMLU at 0.406 vs 0.170.
 
-Metadata-Enriched Hybrid RAG + DPO for Legal LLMs — arXiv (https://arxiv.org/abs/2603.19251)
+Metadata-Enriched Hybrid RAG + DPO for Legal LLMs, arXiv (https://arxiv.org/abs/2603.19251)
 Sept 2025 – Dec 2025
 
 Built hybrid FAISS retrieval fusing dense and BM25 scores, cutting retrieval mismatch from 65% to 10%.
@@ -118,12 +118,12 @@ Engineered metadata-enriched chunking using case summaries and details, improvin
 
 Aligned Llama 3.2 1B via DPO on 3.8K preference pairs, cutting over-refusal from 53.2% to 1.5%.
 
-Agentic RL Self-Play for Biomedical QA — BioNLP Lab (Prof. Hong Yu)
+Agentic RL Self-Play for Biomedical QA, BioNLP Lab (Prof. Hong Yu)
 Aug 2025 – Dec 2025
 
 Designed an ontology-driven agentic RL self-play framework with dual Q&A LLM agents, using MCP for tool-grounded verification, improving biomedical QA by 12% over fine-tuning.
 
-Synthetic Lecture Slides for Detection and Retrieval — ICDAR 2025 (https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11)
+Synthetic Lecture Slides for Detection and Retrieval, ICDAR 2025 (https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11)
 Aug 2024 – Feb 2025
 
 Built an LLM-guided synthetic data pipeline (GPT-4, 18 layouts) generating 4,400 auto-labelled slides across 16 element classes with no manual labelling.
@@ -132,7 +132,7 @@ Fine-tuned CLIP on synthetic data to R@1 43 on real slide retrieval, beating 31k
 
 Projects
 
-EmbedServe — High-Performance Embedding Serving System for Rec Sys
+EmbedServe, High-Performance Embedding Serving System for Rec Sys
 
 Built a high-performance embedding serving system in C++, integrating RocksDB, and dynamic request batching.
 
@@ -140,7 +140,7 @@ Reduced memory by 3.5x and p99 latency by 3.5x at ~2,000 req/s through tiered st
 
 Achieved 45% of peak GPU bandwidth with a fused Triton kernel, matching TorchRec within 20% p99 latency using 1.55x less memory.
 
-UniTrade — Campus Marketplace Web Application
+UniTrade, Campus Marketplace Web Application
 
 GitHub: https://github.com/SuyashManiyar/UniTrade-Campus-Marketplace.git
 
@@ -150,13 +150,13 @@ Implemented live bidding over WebSockets (Socket.IO), pushing bid updates to con
 
 Added natural-language search using NLP to parse text queries into structured category, price, condition filters.
 
-Slide Scribe — Winner, HackUMass XIII
+Slide Scribe, Winner, HackUMass XIII
 
 Project Link: https://devpost.com/software/and_then_there_was_light
 
 Built real-time voice Q&A over live lecture slides for visually impaired students, detecting slide changes via CLIP embedding similarity and answering with Gemini; Flutter client, FastAPI backend.
 
-Cohort Analysis & Engagement Segmentation — Education Technology, B.Tech Project
+Cohort Analysis & Engagement Segmentation, Education Technology, B.Tech Project
 
 Built an engagement classification framework on Edpuzzle watch-time and quiz analytics for students enrolled in the Intro to Engineering course, using k-means to flag the low-engagement 10% for instructor intervention.
 

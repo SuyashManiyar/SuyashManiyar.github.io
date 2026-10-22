@@ -1,497 +1,509 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Suyash Maniyar</title>
-  
-  <meta name="author" content="Suyash Maniyar">
-  <meta name="description" content="Suyash Maniyar: MS CS at UMass Amherst, Applied AI and Data Science Co-op at Johnson &amp; Johnson MedTech. LLM post-training, alignment, and applied ML.">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Suyash Maniyar</title>
+  <meta name="author" content="Suyash Maniyar">
+  <meta name="description" content="Suyash Maniyar, AI engineer and researcher. LLM post-training, alignment and evaluation; agentic pipelines and production ML. MS CS at UMass Amherst, Applied AI Co-op at Johnson &amp; Johnson MedTech.">
   <link rel="icon" type="image/jpeg" href="images/Suyash2.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script>
+    // Apply a saved theme before first paint to avoid a flash.
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav id="main-nav" class="sticky-nav">
-    <ul class="nav-list">
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#research" class="nav-link">Research</a></li>
-      <li><a href="#hackathons" class="nav-link">Projects and Hackathons</a></li>
-      <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-    </ul>
-  </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Back to Top Button -->
-  <button id="back-to-top" class="hidden" aria-label="Back to top">↑</button>
+  <div class="layout">
+    <!-- Sidebar (desktop) / top bar (mobile) -->
+    <header class="rail">
+      <a class="rail-name" href="#about">Suyash Maniyar</a>
+      <nav aria-label="Sections">
+        <ul class="rail-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme">
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
+        <span class="theme-toggle-text">Dark mode</span>
+      </button>
+    </header>
 
-  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:0px">
+    <main id="main">
 
-          <!-- About Section -->
-          <section id="about">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:2.5%;width:65%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name><b>Suyash Maniyar</b></name>
-                  </p>
-
-                  <p>
-                    I am a Master's student in <b>Computer Science</b> at
-                    <a href="https://www.cics.umass.edu/" target="_blank">University of Massachusetts Amherst</a> (Expected May 2027, CGPA: 4.0/4.0).
-                    I completed my Bachelor of Technology in <b>Electrical Engineering</b> from
-                    <a href="https://www.iitj.ac.in/" target="_blank">Indian Institute of Technology, Jodhpur</a> (2019-2023, CGPA: 8.2/10.0).
-                  </p>
-
-                  <p>
-                    I am currently an <b>Applied AI and Data Science Co-op</b> at <b>Johnson &amp; Johnson MedTech</b>,
-                    where I build agentic clinical information extraction pipelines, human-in-the-loop annotation tools,
-                    and anomaly detection models on implanted cardiac sensor data.
-                    Before that, I worked as an Advanced Data Science Associate at ZS Associates and an ML Engineer at Decimal Point Analytics.
-                  </p>
-
-                  <p>
-                    My research is on <b>LLM post-training and alignment</b>: reward hacking under confounded RL
-                    (<a href="https://arxiv.org/abs/2608.15445" target="_blank">COLM 2026 Workshop</a>),
-                    the safety geometry of refusal, continual alignment with LoRA, and retrieval + DPO for legal LLMs.
-                    I previously worked on agentic RL self-play for biomedical QA at the
-                    <a href="https://bio-nlp.github.io/" target="_blank">BioNLP Lab</a> under <b>Prof. Hong Yu</b>.
-                  </p>
-
-                  <p style="text-align:center">
-                    <a href="mailto:smaniyar@umass.edu">smaniyar@umass.edu</a> &nbsp;/&nbsp;
-                    <a href="SuyashManiyar_AIMLDS.pdf" target="_blank"><b>Download Resume (PDF)</b></a> &nbsp;/&nbsp;
-                    <a href="https://www.linkedin.com/in/maniyar-suyash" target="_blank">LinkedIn</a> &nbsp;/&nbsp;
-                    <a href="https://github.com/SuyashManiyar" target="_blank">GitHub</a>
-                  </p>
-                </td>
-
-                <td style="padding:2.5%;width:35%;max-width:35%">
-                  <a href="images/Suyash2.jpeg">
-                    <img style="width:100%;max-width:100%;border-radius:10px;" alt="profile photo" src="images/Suyash1.jpeg">
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <p style="font-size:13px;color:#555;padding:0 2.5%;">
-            <b>Coursework:</b> Data Structures &amp; Algorithms, Advanced NLP, AI Alignment, Systems for Deep Learning, Deep Learning,
-            Machine Learning, DLOps, Computer Networks, Software Engineering, Systems for Data Science
+      <!-- ===== About ===== -->
+      <section id="about" class="hero" aria-labelledby="about-title">
+        <div class="hero-text">
+          <h1 id="about-title" class="hero-name">Suyash<br>Maniyar</h1>
+          <p class="hero-lede">
+            AI engineer and researcher. I study how LLM post-training goes wrong, and I build the systems that put models into production.
           </p>
-          </section>
 
-          <!-- Research & Publications Section -->
-          <section id="research" class="animate-on-scroll">
-          <h2>🔬 Research & Publications</h2>
-
-          <h3>Publications & Preprints</h3>
-
-          <!-- Reward Hacking - COLM 2026 Workshop -->
-          <div class="publication-item">
-            <p>
-              <b>Measuring Reward Hacking and Reasoning-Answer Decoupling Under Confounded Optimization</b><br>
-              <i>Abhishek Mishra*, Armaan Sandhu*, <b>Suyash Maniyar*</b></i><br>
-              <i>COLM 2026, AI Measurement Science Workshop | Feb 2026 – May 2026</i><br>
-              <a href="https://arxiv.org/abs/2608.15445" target="_blank">[arXiv]</a>
-              <a href="colm_paper.pdf" target="_blank">[Paper PDF]</a>
-              <a href="AI_Alignment_report.pdf" target="_blank">[Course Report (IPPO)]</a>
-              <a href="https://github.com/armaansandhu26/ippo" target="_blank">[Code]</a>
-            </p>
-            <ul style="margin-top:10px;">
-              <li>Post-trained 10 LLMs (Qwen2.5, Llama 3.x) via GRPO on a confounded reward, inducing reward hacking.</li>
-              <li>Identified a backdoor-like failure arising from fully correct training data that endpoint metrics cannot detect, and designed an evaluation protocol, including reasoning-answer decoupling and out-of-domain probes, to detect it.</li>
-              <li>Red-teamed checkpoints: the hacked model chose the harmful option 84% of the time in the rewarded position vs 4% for controls, and 0% once position-swapped.</li>
-            </ul>
-            <div class="tech-stack">
-              <span class="tech-tag">GRPO</span>
-              <span class="tech-tag">RL Post-Training</span>
-              <span class="tech-tag">Reward Hacking</span>
-              <span class="tech-tag">Red-Teaming</span>
-              <span class="tech-tag">Qwen2.5</span>
-              <span class="tech-tag">Llama 3</span>
+          <dl class="focus">
+            <div>
+              <dt>Research</dt>
+              <dd>RL post-training, reward hacking, interpretability, alignment</dd>
             </div>
+            <div>
+              <dt>Engineering</dt>
+              <dd>Agentic LLM pipelines, RAG, MLOps, model serving</dd>
+            </div>
+          </dl>
+
+          <p>
+            I'm an <b>Applied AI and Data Science Co-op at Johnson &amp; Johnson MedTech</b>, where my agentic clinical
+            extraction pipeline reaches 97% field accuracy and my annotation platform cut labelling time by 80%.
+            I'm also a Master's student in Computer Science at
+            <a href="https://www.cics.umass.edu/" target="_blank" rel="noopener">UMass Amherst</a>
+            (CGPA 4.0/4.0, expected May 2027).
+          </p>
+          <p>
+            My recent research measures reward hacking under confounded RL
+            (<a href="#pub-colm">COLM 2026 workshop</a>), tests whether refusal and harmfulness are separable inside models
+            (<a href="#res-refusal">under review at TMLR</a>), and treats alignment as a continual learning problem.
+            Before graduate school I spent two years shipping ML at ZS Associates and Decimal Point Analytics, after a
+            B.Tech in Electrical Engineering from <a href="https://www.iitj.ac.in/" target="_blank" rel="noopener">IIT Jodhpur</a>.
+          </p>
+          <ul class="hero-links">
+            <li class="email-item">
+              <a href="mailto:smaniyar@umass.edu">smaniyar@umass.edu</a>
+              <button type="button" class="copy-email" data-email="smaniyar@umass.edu" aria-label="Copy email address">Copy</button>
+            </li>
+            <li><a class="btn-primary" href="SuyashManiyar_AIMLDS.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
+            <li><a href="https://www.linkedin.com/in/maniyar-suyash" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/SuyashManiyar" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+        <a class="hero-photo" href="images/Suyash2.jpeg">
+          <img src="images/Suyash1.jpeg" alt="Suyash Maniyar standing outdoors at night with city buildings behind him" width="320" height="400">
+        </a>
+
+        <figure class="curve" aria-labelledby="curve-caption">
+          <div class="curve-plot" id="curve-plot"></div>
+          <figcaption id="curve-caption">
+            Career so far, plotted as a reward curve. Hover or tap a point to see the milestone.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- ===== Research ===== -->
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Research</h2>
+
+        <h3 class="subhead">Publications and preprints</h3>
+
+        <article class="entry" id="pub-colm" data-tags="python pytorch grpo lora huggingface">
+          <div class="entry-meta">
+            <span class="venue">COLM 2026</span>
+            <span>AI Measurement Science Workshop</span>
           </div>
-
-          <!-- SynSlideGen Publication -->
-          <div class="publication-item">
-            <p>
-              <b>AI-Generated Lecture Slides for Improving Slide Element Detection and Slide Image Retrieval</b><br>
-              <i>ICDAR 2025 | Aug 2024 – Feb 2025</i><br>
-              <a href="https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11" target="_blank">[Paper]</a>
-              <a href="https://synslidegen.github.io/" target="_blank">[Project Website]</a>
-            </p>
-            <ul style="margin-top:10px;">
-              <li>Built an LLM-guided synthetic data pipeline (GPT-4, 18 layouts) generating 4,400 auto-labelled slides across 16 element classes with no manual labelling.</li>
-              <li>Fine-tuned CLIP on synthetic data to R@1 43 on real slide retrieval, beating 31k real out-of-domain slides (R@1 31); lifted LayoutLMv3 detection from 27.3 to 33.9 mAP.</li>
+          <div class="entry-body">
+            <h4 class="entry-title">Measuring Reward Hacking and Reasoning-Answer Decoupling Under Confounded Optimization</h4>
+            <p class="authors">Abhishek Mishra*, Armaan Sandhu*, <b>Suyash Maniyar*</b></p>
+            <ul class="links">
+              <li><a href="https://arxiv.org/abs/2608.15445" target="_blank" rel="noopener">arXiv</a></li>
+              <li><a href="colm_paper.pdf" target="_blank" rel="noopener">Paper PDF</a></li>
+              <li><a href="AI_Alignment_report.pdf" target="_blank" rel="noopener">Course report (IPPO)</a></li>
+              <li><a href="https://github.com/armaansandhu26/ippo" target="_blank" rel="noopener">Code</a></li>
             </ul>
-            <div style="text-align:center;margin:15px 0;">
-              <a href="https://synslidegen.github.io/" target="_blank">
-                <img src="images/teaser.png" alt="SynSlideGen Teaser" style="width:100%;max-width:700px;border-radius:10px;">
-              </a>
-            </div>
-            <div class="tech-stack">
-              <span class="tech-tag">GPT-4</span>
-              <span class="tech-tag">Synthetic Data</span>
-              <span class="tech-tag">CLIP</span>
-              <span class="tech-tag">LayoutLMv3</span>
-              <span class="tech-tag">PyTorch</span>
-            </div>
+            <ul class="points">
+              <li>Post-trained 10 LLMs (Qwen2.5, Llama 3.x) with GRPO on a confounded reward, inducing reward hacking.</li>
+              <li>Identified a backdoor-like failure that arises from fully correct training data and that endpoint metrics cannot detect, then designed an evaluation protocol with reasoning-answer decoupling and out-of-domain probes to catch it.</li>
+              <li>Red-teamed checkpoints: the hacked model chose the harmful option 84% of the time in the rewarded position, against 4% for controls and 0% once positions were swapped.</li>
+            </ul>
           </div>
+        </article>
 
-          <!-- Legal LLMs - arXiv -->
-          <div class="publication-item">
-            <p>
-              <b>Enhancing Legal LLMs with Metadata-Enriched Retrieval and DPO</b><br>
-              <i>arXiv preprint | Sept 2025 – Dec 2025</i><br>
-              <a href="https://arxiv.org/abs/2603.19251" target="_blank">[arXiv]</a>
-              <a href="Course_Project.pdf" target="_blank">[Project Report]</a>
-            </p>
-            <ul style="margin-top:10px;">
+        <article class="entry" id="pub-icdar" data-tags="python pytorch">
+          <div class="entry-meta">
+            <span class="venue">ICDAR 2025</span>
+            <span>Aug 2024 – Feb 2025</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">AI-Generated Lecture Slides for Improving Slide Element Detection and Slide Image Retrieval</h4>
+            <ul class="links">
+              <li><a href="https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11" target="_blank" rel="noopener">Paper</a></li>
+              <li><a href="https://synslidegen.github.io/" target="_blank" rel="noopener">Project website</a></li>
+            </ul>
+            <ul class="points">
+              <li>Built an LLM-guided synthetic data pipeline (GPT-4, 18 layouts) that generates 4,400 auto-labelled slides across 16 element classes with no manual labelling.</li>
+              <li>Fine-tuned CLIP on synthetic data to R@1 43 on real slide retrieval, beating 31k real out-of-domain slides (R@1 31), and lifted LayoutLMv3 detection from 27.3 to 33.9 mAP.</li>
+            </ul>
+            <a class="teaser" href="https://synslidegen.github.io/" target="_blank" rel="noopener">
+              <img src="images/teaser.png" alt="SynSlideGen pipeline: content generation, layout and style, and annotation stages" loading="lazy">
+            </a>
+          </div>
+        </article>
+
+        <article class="entry" id="pub-legal" data-tags="python pytorch rag dpo vectordb huggingface">
+          <div class="entry-meta">
+            <span class="venue">arXiv preprint</span>
+            <span>Sept – Dec 2025</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Enhancing Legal LLMs with Metadata-Enriched Retrieval and DPO</h4>
+            <ul class="links">
+              <li><a href="https://arxiv.org/abs/2603.19251" target="_blank" rel="noopener">arXiv</a></li>
+              <li><a href="Course_Project.pdf" target="_blank" rel="noopener">Project report</a></li>
+            </ul>
+            <ul class="points">
               <li>Built hybrid FAISS retrieval fusing dense and BM25 scores, cutting retrieval mismatch from 65% to 10%.</li>
-              <li>Engineered metadata-enriched chunking using case summaries and details, improving recall@10 by 23%.</li>
-              <li>Aligned Llama 3.2 1B via DPO on 3.8K preference pairs, cutting over-refusal from 53.2% to 1.5%.</li>
+              <li>Engineered metadata-enriched chunking from case summaries and details, improving recall@10 by 23%.</li>
+              <li>Aligned Llama 3.2 1B with DPO on 3.8K preference pairs, cutting over-refusal from 53.2% to 1.5%.</li>
             </ul>
-            <div class="tech-stack">
-              <span class="tech-tag">RAG</span>
-              <span class="tech-tag">FAISS</span>
-              <span class="tech-tag">BM25</span>
-              <span class="tech-tag">DPO</span>
-              <span class="tech-tag">Llama 3.2</span>
-              <span class="tech-tag">Legal AI</span>
-            </div>
           </div>
+        </article>
 
-          <h3>Research Experience</h3>
+        <h3 class="subhead">Research experience</h3>
 
-          <!-- Refusal Direction - TMLR review -->
-          <div class="publication-item">
-            <p>
-              <b>Is the Refusal Direction Mostly Harmfulness?</b><br>
-              <i>Under review at TMLR | Feb 2026 – Aug 2026</i>
-            </p>
-            <ul style="margin-top:10px;">
-              <li>Reproduced the claim that LLMs encode harmfulness and refusal separately on 8 LLMs (Llama-3, Qwen2.5, Gemma-3, 3B to 27B) using nnsight activation interventions.</li>
-              <li>Showed the separation fails: after removing the refusal part, the harm direction keeps 76% of its causal effect.</li>
-              <li>Broke the proposed latent safety guard with a nanoGCG suffix (recall down to 40-74%).</li>
+        <article class="entry" id="res-refusal" data-tags="python pytorch nnsight">
+          <div class="entry-meta">
+            <span class="venue">Under review, TMLR</span>
+            <span>Feb – Aug 2026</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Is the Refusal Direction Mostly Harmfulness?</h4>
+            <ul class="points">
+              <li>Reproduced the claim that LLMs encode harmfulness and refusal separately on 8 models (Llama-3, Qwen2.5, Gemma-3, 3B to 27B) using nnsight activation interventions.</li>
+              <li>Showed the separation fails: after removing the refusal component, the harm direction keeps 76% of its causal effect.</li>
+              <li>Broke the proposed latent safety guard with a nanoGCG suffix, dropping recall to 40-74%.</li>
             </ul>
-            <div class="tech-stack">
-              <span class="tech-tag">Interpretability</span>
-              <span class="tech-tag">nnsight</span>
-              <span class="tech-tag">Activation Steering</span>
-              <span class="tech-tag">GCG Attacks</span>
-              <span class="tech-tag">AI Safety</span>
-            </div>
           </div>
+        </article>
 
-          <!-- Continual Learning Alignment -->
-          <div class="publication-item">
-            <p>
-              <b>AI Alignment as a Continual Learning Problem</b><br>
-              <i>UMass Amherst | Jan 2026 – May 2026</i>
-            </p>
-            <ul style="margin-top:10px;">
+        <article class="entry" id="res-continual" data-tags="python pytorch lora huggingface">
+          <div class="entry-meta">
+            <span class="venue">UMass Amherst</span>
+            <span>Jan – May 2026</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">AI Alignment as a Continual Learning Problem</h4>
+            <ul class="points">
               <li>Studied whether LLMs can both learn and unlearn behaviors with LoRA, training 6 sequential adapters on paired safety, bias, truthfulness and privacy tasks (PKU-SafeRLHF, BBQ, TruthfulQA, TOFU).</li>
-              <li>Found all 4 merge strategies collapsed refusal to 0.005; built a zero-parameter centroid router that beat the best merge by up to 52 points and held MMLU at 0.406 vs 0.170.</li>
+              <li>Found all 4 merge strategies collapsed refusal to 0.005, then built a zero-parameter centroid router that beat the best merge by up to 52 points and held MMLU at 0.406 against 0.170.</li>
             </ul>
-            <div class="tech-stack">
-              <span class="tech-tag">LoRA</span>
-              <span class="tech-tag">Continual Learning</span>
-              <span class="tech-tag">Unlearning</span>
-              <span class="tech-tag">Adapter Merging</span>
-            </div>
           </div>
+        </article>
 
-          <!-- BioNLP Lab -->
-          <div class="publication-item">
-            <p>
-              <b>Agentic RL Self-Play for Biomedical QA</b><br>
-              <i><a href="https://bio-nlp.github.io/" target="_blank">BioNLP Lab</a>, UMass Amherst (Prof. Hong Yu) | Aug 2025 – Dec 2025</i>
+        <article class="entry" id="res-bionlp" data-tags="python pytorch">
+          <div class="entry-meta">
+            <span class="venue"><a href="https://bio-nlp.github.io/" target="_blank" rel="noopener">BioNLP Lab</a></span>
+            <span>Aug – Dec 2025</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Agentic RL Self-Play for Biomedical QA</h4>
+            <p class="authors">Advised by Prof. Hong Yu</p>
+            <ul class="points">
+              <li>Designed an ontology-driven agentic RL self-play framework with dual question and answer LLM agents, using MCP for tool-grounded verification, improving biomedical QA by 12% over fine-tuning.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="res-haptic" data-tags="">
+          <div class="entry-meta">
+            <span class="venue">INAE-SERB Youth Conclave 2022</span>
+            <span>Aug 2022 – Jan 2023</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Data-Driven Haptic Modelling <span class="award">1st place</span></h4>
+            <ul class="links">
+              <li><a href="https://drive.google.com/file/d/1v3vZmd0dbtJ0Te6Z9SChsO449UpH4Frp/view?usp=drive_link" target="_blank" rel="noopener">Poster</a></li>
+            </ul>
+            <ul class="points">
+              <li>Devised a method for force modelling of inhomogeneous objects in haptics, reaching 95% accuracy.</li>
+              <li>Presented "Barycentric Interpolation for Force Modelling on Visco-Elastic Inhomogeneous Objects" and won first place at the Youth Conclave 2022.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- ===== Projects ===== -->
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+
+        <article class="entry" id="proj-embedserve" data-tags="cpp cuda distributed pytorch">
+          <div class="entry-meta">
+            <span class="venue">ML systems</span>
+            <span>UMass Amherst</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">EmbedServe: embedding serving for recommender systems</h4>
+            <ul class="points">
+              <li>Built a high-performance embedding serving system in C++ with RocksDB and dynamic request batching.</li>
+              <li>Reduced memory by 3.5× and p99 latency by 3.5× at about 2,000 req/s through tiered storage and INT8 quantization.</li>
+              <li>Reached 45% of peak GPU bandwidth with a fused Triton kernel, matching TorchRec within 20% p99 latency while using 1.55× less memory.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="proj-slidescribe" data-tags="python fastapi flutter">
+          <div class="entry-meta">
+            <span class="venue">HackUMass XIII</span>
+            <span>Oct 2025</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Slide Scribe <span class="award">Winner</span></h4>
+            <ul class="links">
+              <li><a href="https://devpost.com/software/and_then_there_was_light" target="_blank" rel="noopener">Devpost</a></li>
+            </ul>
+            <ul class="points">
+              <li>Real-time voice Q&amp;A over live lecture slides for visually impaired students. Detects slide changes through CLIP embedding similarity and answers with Gemini, on a Flutter client and FastAPI backend.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="proj-unitrade" data-tags="typescript javascript nextjs react node rest">
+          <div class="entry-meta">
+            <span class="venue">Full-stack</span>
+            <span>Sept – Dec 2025</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">UniTrade: campus marketplace</h4>
+            <ul class="links">
+              <li><a href="https://github.com/SuyashManiyar/UniTrade-Campus-Marketplace.git" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+            <ul class="points">
+              <li>Built a campus-only marketplace on a Next.js/TypeScript client and a Node/Express REST API.</li>
+              <li>Implemented live bidding over WebSockets (Socket.IO), pushing bid updates to connected clients in real time.</li>
+              <li>Added natural-language search that parses text queries into structured category, price and condition filters.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="proj-cohort" data-tags="python">
+          <div class="entry-meta">
+            <span class="venue">B.Tech project</span>
+            <span>IIT Jodhpur</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Cohort analysis and engagement segmentation</h4>
+            <ul class="points">
+              <li>Built an engagement classification framework on Edpuzzle watch-time and quiz analytics for the Intro to Engineering course, using k-means to flag the least engaged 10% of students for instructor follow-up.</li>
+              <li>Compared quiz performance between cohorts with and without video assignments.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- ===== Experience ===== -->
+      <section id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">Experience</h2>
+
+        <article class="entry is-current" id="exp-jnj" data-tags="python django azure docker cicd sql pytorch sft rest">
+          <div class="entry-meta">
+            <span class="venue">Jul 2026 – now</span>
+            <span>Danvers, MA</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Applied AI and Data Science Co-op</h4>
+            <p class="org">Johnson &amp; Johnson MedTech</p>
+            <ul class="points collapsible">
+              <li>Built a Django human-in-the-loop annotation platform that pre-fills LLM extractions with bounding-box evidence, so annotators approve or edit instead of labelling from scratch, cutting annotation time by 80%.</li>
+              <li>Developed an agentic clinical information extraction pipeline (OCR tool calls, LLM extraction, LLM-as-a-judge) with 97% field accuracy, routing only low-confidence cases back to human review.</li>
+              <li>Deployed on Azure App Service and PostgreSQL Flexible Server, with batch OCR in a Container Apps job scaling to 30 replicas at 5 pages per second, and CI/CD through GitLab pipelines.</li>
+              <li>Designed an anomaly detection pipeline on 250 Hz implanted cardiac sensor time series, improving Right Ventricular Dysfunction F1 by 7%; now developing cardiac output regression from sensor-derived features.</li>
+              <li>Fine-tuned open-weight LLMs and VLMs (Llama 3.2 3B/11B) for medical NER on scanned clinical PDFs.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="exp-zs" data-tags="python sql aws docker etl">
+          <div class="entry-meta">
+            <span class="venue">Nov 2024 – Jul 2025</span>
+            <span>Pune, India</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Advanced Data Science Associate</h4>
+            <p class="org">ZS Associates</p>
+            <ul class="points collapsible">
+              <li>Developed a model that predicts which patients will switch from ongoing drug treatments, using clinical data and an ensemble of ML (Bayes, XGBoost) and DL (TabNet) models, improving F1 by 11%.</li>
+              <li>Engineered an end-to-end MLOps pipeline on AWS SageMaker, orchestrated with Airflow and Docker, automating drift detection and retraining across 5+ models and cutting manual deployment effort by 60%.</li>
+              <li>Ran SHAP analysis that helped optimize marketing, with projected savings of up to $500K.</li>
+              <li>Built patient cohorts from 100M+ claims records by applying business rules in SQL on Amazon Redshift.</li>
+              <li>Quantified the impact of advertisements with A/B testing and Double ML, informing campaign spend.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="exp-dpa" data-tags="python spark rag vectordb lora pytorch">
+          <div class="entry-meta">
+            <span class="venue">Jul 2023 – Oct 2024</span>
+            <span>Mumbai, India</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">ML Engineer</h4>
+            <p class="org">Decimal Point Analytics</p>
+            <ul class="points collapsible">
+              <li>Built an XGBoost supply chain model for a leading FMCG client, forecasting SKU-level demand from lag and rolling-window features engineered in Spark, cutting monthly inventory waste by 15%.</li>
+              <li>Designed an anomaly detection pipeline that predicts defects in industrial machinery from time-series data.</li>
+              <li>Shipped a RAG chatbot for Q&amp;A with LangChain and Pinecone, adding knowledge graphs for a 9% accuracy gain and FAQ response caching that cut inference cost by 30%.</li>
+              <li>Automated internal web scraping by fine-tuning Llama 2 (7B/13B) with LoRA for text extraction and using GPT-4 for code generation, reducing downtime from 12 hours to 3 minutes.</li>
+              <li>Built a computer vision car damage segmentation system, improving claim processing efficiency by 75%.</li>
+              <li>Compressed few-shot object detection models by 70% with knowledge distillation for edge deployment.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="exp-raapid" data-tags="python pytorch">
+          <div class="entry-meta">
+            <span class="venue">Aug 2022 – May 2023</span>
+            <span>Remote</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Machine Learning Intern</h4>
+            <p class="org">RaapidAI</p>
+            <ul class="points">
+              <li>Built a table detection and structure recognition pipeline for medical document images, fine-tuning CascadeTabNet, DETR and DiT to 76% mAP, with augmentation adding 7% on a private gold-standard set.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="exp-dpa-intern" data-tags="python pytorch">
+          <div class="entry-meta">
+            <span class="venue">May – Jul 2022</span>
+            <span>Remote</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">AI/ML Intern</h4>
+            <p class="org">Decimal Point Analytics</p>
+            <ul class="points">
+              <li>Built an end-to-end accident detection and damage segmentation pipeline for CCTV footage.</li>
+              <li>Compared Vision Transformer, YOLO and other architectures, reaching an F1 score of 87%.</li>
+            </ul>
+          </div>
+        </article>
+
+        <h3 class="subhead">Education</h3>
+
+        <article class="entry" id="edu-umass" data-tags="">
+          <div class="entry-meta">
+            <span class="venue">2025 – May 2027</span>
+            <span>Amherst, MA</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">MS in Computer Science</h4>
+            <p class="org">University of Massachusetts Amherst, CGPA 4.0/4.0</p>
+            <p class="coursework">
+              Coursework: Advanced NLP, AI Alignment, Systems for Deep Learning, Deep Learning, Machine Learning,
+              DLOps, Systems for Data Science, Data Structures &amp; Algorithms, Computer Networks, Software Engineering.
             </p>
-            <ul style="margin-top:10px;">
-              <li>Designed an ontology-driven agentic RL self-play framework with dual Q&amp;A LLM agents, using MCP for tool-grounded verification, improving biomedical QA by 12% over fine-tuning.</li>
+          </div>
+        </article>
+
+        <article class="entry" id="edu-iitj" data-tags="">
+          <div class="entry-meta">
+            <span class="venue">2019 – 2023</span>
+            <span>Jodhpur, India</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">B.Tech in Electrical Engineering</h4>
+            <p class="org">Indian Institute of Technology, Jodhpur, CGPA 8.2/10.0</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ===== Skills ===== -->
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <p class="section-note">Select a skill to highlight the work that uses it. The number shows how many entries match.</p>
+
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>LLMs and alignment</h3>
+            <ul class="chips">
+              <li><button type="button" class="chip" data-skill="grpo">GRPO</button></li>
+              <li><button type="button" class="chip" data-skill="dpo">DPO</button></li>
+              <li><button type="button" class="chip" data-skill="rlhf">RLHF</button></li>
+              <li><button type="button" class="chip" data-skill="sft">SFT</button></li>
+              <li><button type="button" class="chip" data-skill="lora">LoRA/QLoRA</button></li>
+              <li><button type="button" class="chip" data-skill="huggingface">Hugging Face (TRL, PEFT)</button></li>
+              <li><button type="button" class="chip" data-skill="nnsight">nnsight</button></li>
+              <li><button type="button" class="chip" data-skill="rag">RAG</button></li>
             </ul>
-            <div class="tech-stack">
-              <span class="tech-tag">Self-Play RL</span>
-              <span class="tech-tag">Multi-Agent LLMs</span>
-              <span class="tech-tag">MCP</span>
-              <span class="tech-tag">Biomedical NLP</span>
-            </div>
           </div>
-
-          <!-- Data-Driven Haptic Modelling -->
-          <div class="publication-item">
-            <p>
-              <b>🥇 Data-Driven Haptic Modelling</b><br>
-              <i>Indian National Academy of Engineering & Science and Engineering Research Board Youth Conclave 2022 | Aug 2022 – Jan 2023</i><br>
-              <a href="https://drive.google.com/file/d/1v3vZmd0dbtJ0Te6Z9SChsO449UpH4Frp/view?usp=drive_link" target="_blank">[Poster]</a>
-            </p>
-            <ul style="margin-top:10px;">
-              <li>Devised a novel methodology for force modelling of inhomogeneous objects in haptics. Obtained 95% accuracy.</li>
-              <li>Presented "Barycentric Interpolation for Force Modelling on Visco-Elastic Inhomogeneous Objects" and <b>won 1st place</b> at the Youth Conclave 2022.</li>
+          <div class="skill-group">
+            <h3>ML and AI</h3>
+            <ul class="chips">
+              <li><button type="button" class="chip" data-skill="pytorch">PyTorch</button></li>
+              <li><button type="button" class="chip" data-skill="tensorflow">TensorFlow</button></li>
+              <li><button type="button" class="chip" data-skill="vectordb">Vector DBs</button></li>
+              <li><button type="button" class="chip" data-skill="kubernetes">Kubernetes</button></li>
+              <li><button type="button" class="chip" data-skill="spark">Spark</button></li>
+              <li><button type="button" class="chip" data-skill="hadoop">Hadoop</button></li>
+              <li><button type="button" class="chip" data-skill="etl">ETL orchestration</button></li>
+              <li><button type="button" class="chip" data-skill="slurm">SLURM</button></li>
+              <li><button type="button" class="chip" data-skill="cuda">CUDA</button></li>
             </ul>
-            <div class="tech-stack">
-              <span class="tech-tag">MATLAB</span>
-              <span class="tech-tag">Haptics</span>
-              <span class="tech-tag">Force Modelling</span>
-              <span class="tech-tag">Barycentric Interpolation</span>
-            </div>
           </div>
-          </section>
-
-          <!-- Hackathons & Projects Section -->
-          <section id="hackathons" class="animate-on-scroll">
-          <h2>Projects & Hackathons 🏆</h2>
-
-          <div class="filter-controls">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="hackathon">Hackathons</button>
-            <button class="filter-btn" data-filter="personal">Projects</button>
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li><button type="button" class="chip" data-skill="python">Python</button></li>
+              <li><button type="button" class="chip" data-skill="sql">SQL</button></li>
+              <li><button type="button" class="chip" data-skill="cpp">C/C++</button></li>
+              <li><button type="button" class="chip" data-skill="typescript">TypeScript</button></li>
+              <li><button type="button" class="chip" data-skill="javascript">JavaScript</button></li>
+              <li><button type="button" class="chip" data-skill="htmlcss">HTML/CSS</button></li>
+              <li><button type="button" class="chip" data-skill="r">R</button></li>
+              <li><button type="button" class="chip" data-skill="latex">LaTeX</button></li>
+            </ul>
           </div>
-
-          <div class="projects-container">
-            <!-- EmbedServe -->
-            <div class="project-card" data-category="personal">
-              <div class="project-summary">
-                <h4>EmbedServe: High-Performance Embedding Serving System for RecSys</h4>
-                <p class="project-date"><i>UMass Amherst</i></p>
-                <p class="project-brief">A C++ embedding serving system with tiered storage, INT8 quantization and a fused Triton kernel, cutting memory and p99 latency by 3.5×.</p>
-                <button class="expand-btn">Read More</button>
-              </div>
-              <div class="project-details hidden">
-                <ul style="margin-top:10px;">
-                  <li>Built a high-performance embedding serving system in C++, integrating RocksDB and dynamic request batching.</li>
-                  <li>Reduced memory by 3.5× and p99 latency by 3.5× at ~2,000 req/s through tiered storage and INT8 quantization.</li>
-                  <li>Achieved 45% of peak GPU bandwidth with a fused Triton kernel, matching TorchRec within 20% p99 latency using 1.55× less memory.</li>
-                </ul>
-                <div class="tech-stack">
-                  <span class="tech-tag">C++</span>
-                  <span class="tech-tag">RocksDB</span>
-                  <span class="tech-tag">Triton</span>
-                  <span class="tech-tag">CUDA</span>
-                  <span class="tech-tag">INT8 Quantization</span>
-                  <span class="tech-tag">Recommender Systems</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide Scribe - HackUMass XIII Winner -->
-            <div class="project-card" data-category="hackathon">
-              <div class="project-summary">
-                <h4>🥇 Slide Scribe: Winner at HackUMass XIII</h4>
-                <p class="project-date"><i>October 2025</i></p>
-                <p class="project-brief">Real-time voice Q&amp;A over live lecture slides for visually impaired students.</p>
-                <button class="expand-btn">Read More</button>
-              </div>
-              <div class="project-details hidden">
-                <p>Built real-time voice Q&amp;A over live lecture slides for visually impaired students, detecting slide changes via CLIP embedding similarity and answering with Gemini; Flutter client, FastAPI backend. Won first place at HackUMass XIII.</p>
-                <div class="tech-stack">
-                  <span class="tech-tag">CLIP</span>
-                  <span class="tech-tag">Gemini</span>
-                  <span class="tech-tag">Flutter</span>
-                  <span class="tech-tag">FastAPI</span>
-                  <span class="tech-tag">Accessibility</span>
-                </div>
-                <a href="https://devpost.com/software/and_then_there_was_light" target="_blank" class="project-link">View on Devpost →</a>
-              </div>
-            </div>
-
-            <!-- UniTrade -->
-            <div class="project-card" data-category="personal">
-              <div class="project-summary">
-                <h4>UniTrade: Campus Marketplace Web Application</h4>
-                <p class="project-date"><i>Sept 2025 – Dec 2025</i></p>
-                <p class="project-brief">A campus-only marketplace with live bidding over WebSockets and natural-language search.</p>
-                <button class="expand-btn">Read More</button>
-              </div>
-              <div class="project-details hidden">
-                <ul style="margin-top:10px;">
-                  <li>Built a campus-only marketplace on a Next.js/TypeScript client and Node/Express REST API.</li>
-                  <li>Implemented live bidding over WebSockets (Socket.IO), pushing bid updates to connected clients in real time.</li>
-                  <li>Added natural-language search using NLP to parse text queries into structured category, price and condition filters.</li>
-                </ul>
-                <div class="tech-stack">
-                  <span class="tech-tag">Next.js</span>
-                  <span class="tech-tag">TypeScript</span>
-                  <span class="tech-tag">Node/Express</span>
-                  <span class="tech-tag">Socket.IO</span>
-                  <span class="tech-tag">NLP</span>
-                </div>
-                <a href="https://github.com/SuyashManiyar/UniTrade-Campus-Marketplace.git" target="_blank" class="project-link">View on GitHub →</a>
-              </div>
-            </div>
-
-            <!-- Cohort Analysis - B.Tech Project -->
-            <div class="project-card" data-category="personal">
-              <div class="project-summary">
-                <h4>Cohort Analysis &amp; Engagement Segmentation: Education Technology</h4>
-                <p class="project-date"><i>B.Tech Project, IIT Jodhpur</i></p>
-                <p class="project-brief">Engagement classification on Edpuzzle watch-time and quiz analytics to flag low-engagement students for instructor intervention.</p>
-                <button class="expand-btn">Read More</button>
-              </div>
-              <div class="project-details hidden">
-                <ul style="margin-top:10px;">
-                  <li>Built an engagement classification framework on Edpuzzle watch-time and quiz analytics for students enrolled in the Intro to Engineering course, using k-means to flag the low-engagement 10% for instructor intervention.</li>
-                  <li>Evaluated experiments comparing quiz performance between cohorts with and without video assignments.</li>
-                </ul>
-                <div class="tech-stack">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">k-means</span>
-                  <span class="tech-tag">Cohort Analysis</span>
-                  <span class="tech-tag">Learning Analytics</span>
-                </div>
-              </div>
-            </div>
+          <div class="skill-group">
+            <h3>Software engineering</h3>
+            <ul class="chips">
+              <li><button type="button" class="chip" data-skill="django">Django</button></li>
+              <li><button type="button" class="chip" data-skill="node">Node/Express</button></li>
+              <li><button type="button" class="chip" data-skill="nextjs">Next.js</button></li>
+              <li><button type="button" class="chip" data-skill="react">React</button></li>
+              <li><button type="button" class="chip" data-skill="rest">REST APIs</button></li>
+              <li><button type="button" class="chip" data-skill="fastapi">FastAPI</button></li>
+              <li><button type="button" class="chip" data-skill="flutter">Flutter</button></li>
+              <li><button type="button" class="chip" data-skill="distributed">Distributed systems</button></li>
+            </ul>
           </div>
-          </section>
-
-          <!-- Professional Experience Section -->
-          <section id="experience" class="animate-on-scroll">
-          <h2>💼 Professional Experience</h2>
-
-          <h3>Applied AI and Data Science Co-op — Johnson &amp; Johnson MedTech</h3>
-          <p style="margin-top:-10px;"><i>Danvers, MA, USA | July 2026 – Present</i></p>
-          <ul>
-            <li>Built a Django human-in-the-loop annotation platform that pre-fills LLM extractions with bounding-box evidence, letting annotators approve or edit rather than label from scratch, cutting annotation time by 80%.</li>
-            <li>Developed an agentic clinical information extraction pipeline (OCR tool calls, LLM extraction, LLM-as-a-judge) to automate the annotation process, with 97% field accuracy, routing only low-confidence cases back to human review.</li>
-            <li>Deployed on Azure App Service and PostgreSQL Flexible Server, with batch OCR in a Container Apps job scaling to 30 replicas at 5 pages/second; CI/CD through GitLab pipelines.</li>
-            <li>Designed an anomaly detection pipeline on 250 Hz implanted cardiac sensor time-series data, improving Right Ventricular Dysfunction F1 by 7%; developing cardiac output regression from sensor-derived features.</li>
-            <li>Fine-tuned open-weight LLMs and VLMs (Llama 3.2 3B/11B) for medical NER on scanned clinical PDFs.</li>
-          </ul>
-
-          <h3>Advanced Data Science Associate — ZS Associates</h3>
-          <p style="margin-top:-10px;"><i>Pune, India | November 2024 – July 2025</i></p>
-          <ul>
-            <li>Developed a Switch Prediction Model to predict patients switching from ongoing drug treatments, leveraging clinical data and an ensemble of ML (Bayes, XGBoost) and DL (TabNet) models, improving F1 score by 11%.</li>
-            <li>Engineered an end-to-end MLOps pipeline on AWS (SageMaker) orchestrated with Airflow and Docker, automating drift detection and retraining across 5+ models, cutting manual deployment effort by 60%.</li>
-            <li>Performed SHAP analysis and aided in optimizing marketing, with projected cost savings of up to $500K.</li>
-            <li>Built patient cohorts from 100M+ claims records by applying business rules in SQL on Amazon Redshift.</li>
-            <li>Quantified the impact of advertisements using A/B testing and Double ML, enabling optimized campaign spend.</li>
-          </ul>
-
-          <h3>ML Engineer — Decimal Point Analytics</h3>
-          <p style="margin-top:-10px;"><i>Mumbai, India | July 2023 – October 2024</i></p>
-          <ul>
-            <li>Built an XGBoost supply chain optimization model for a leading FMCG client, forecasting SKU-level demand from lag and rolling-window features engineered in Spark, cutting monthly inventory waste by 15%.</li>
-            <li>Designed an anomaly detection pipeline to predict defects in industrial machinery using time-series data.</li>
-            <li>Shipped a RAG-based chatbot for Q&amp;A, leveraging LangChain and the Pinecone vector database; integrated knowledge graphs, increasing accuracy by 9%. Implemented FAQ response caching, reducing inference cost by 30%.</li>
-            <li>Automated an internal web scraping process by fine-tuning Llama 2 (7B/13B) with LoRA for text-based extraction and leveraging GPT-4 for a code generation pipeline, reducing downtime from 12 hours to 3 minutes.</li>
-            <li>Built a computer vision based car damage segmentation system, improving claim processing efficiency by 75%.</li>
-            <li>Compressed few-shot object detection models by 70% using knowledge distillation, enabling edge deployment.</li>
-          </ul>
-
-          <h3>Machine Learning Intern — RaapidAI</h3>
-          <p style="margin-top:-10px;"><i>Remote, India | Aug 2022 – May 2023</i></p>
-          <ul>
-            <li>Built a table detection and structure recognition pipeline for medical document images, fine-tuning CascadeTabNet, DETR and DiT to 76% mAP, with augmentation adding 7% on a private gold-standard set.</li>
-          </ul>
-
-          <h3>AI/ML Intern — Decimal Point Analytics</h3>
-          <p style="margin-top:-10px;"><i>Remote, India | May 2022 – July 2022</i></p>
-          <ul>
-            <li>Built an end-to-end accident detection and damage segmentation pipeline for CCTV footage.</li>
-            <li>Conducted experiments with Vision Transformer, YOLO, and other architectures, securing an F1 score of 87%.</li>
-          </ul>
-          </section>
-
-          <!-- Technical Skills Section -->
-          <section id="skills" class="animate-on-scroll">
-          <h2>🛠️ Technical Skills</h2>
-
-          <div class="skills-section">
-            <div class="skill-category">
-              <h4 class="category-toggle">Languages <span class="toggle-icon">▼</span></h4>
-              <div class="skill-tags">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">C/C++</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">HTML/CSS</span>
-                <span class="skill-tag">R</span>
-                <span class="skill-tag">LaTeX</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h4 class="category-toggle">LLMs &amp; Alignment <span class="toggle-icon">▼</span></h4>
-              <div class="skill-tags">
-                <span class="skill-tag">GRPO</span>
-                <span class="skill-tag">DPO</span>
-                <span class="skill-tag">RLHF</span>
-                <span class="skill-tag">SFT</span>
-                <span class="skill-tag">LoRA/QLoRA</span>
-                <span class="skill-tag">Hugging Face (TRL, PEFT)</span>
-                <span class="skill-tag">nnsight</span>
-                <span class="skill-tag">RAG</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h4 class="category-toggle">ML &amp; AI <span class="toggle-icon">▼</span></h4>
-              <div class="skill-tags">
-                <span class="skill-tag">PyTorch</span>
-                <span class="skill-tag">TensorFlow</span>
-                <span class="skill-tag">Vector DBs</span>
-                <span class="skill-tag">Kubernetes</span>
-                <span class="skill-tag">Spark</span>
-                <span class="skill-tag">Hadoop</span>
-                <span class="skill-tag">ETL Orchestration</span>
-                <span class="skill-tag">SLURM</span>
-                <span class="skill-tag">CUDA</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h4 class="category-toggle">Software Engineering <span class="toggle-icon">▼</span></h4>
-              <div class="skill-tags">
-                <span class="skill-tag">Django</span>
-                <span class="skill-tag">Node/Express</span>
-                <span class="skill-tag">Next.js</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">REST APIs</span>
-                <span class="skill-tag">FastAPI</span>
-                <span class="skill-tag">Flutter</span>
-                <span class="skill-tag">Distributed Systems</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h4 class="category-toggle">Cloud &amp; Infra <span class="toggle-icon">▼</span></h4>
-              <div class="skill-tags">
-                <span class="skill-tag">AWS (EC2, SageMaker)</span>
-                <span class="skill-tag">GCP</span>
-                <span class="skill-tag">Azure</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">CI/CD (GitLab, Jenkins)</span>
-              </div>
-            </div>
+          <div class="skill-group">
+            <h3>Cloud and infrastructure</h3>
+            <ul class="chips">
+              <li><button type="button" class="chip" data-skill="aws">AWS (EC2, SageMaker)</button></li>
+              <li><button type="button" class="chip" data-skill="gcp">GCP</button></li>
+              <li><button type="button" class="chip" data-skill="azure">Azure</button></li>
+              <li><button type="button" class="chip" data-skill="docker">Docker</button></li>
+              <li><button type="button" class="chip" data-skill="cicd">CI/CD (GitLab, Jenkins)</button></li>
+            </ul>
           </div>
-          </section>
+        </div>
+      </section>
 
-          <!-- Footer -->
-          <br>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px">
-                  <p style="text-align:right;font-size:small;">
-                    Template adapted from <a href="https://github.com/jonbarron/jonbarron_website" target="_blank">Jon Barron's website</a>.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <footer class="site-footer">
+        <p>Last updated October 2026. Originally based on <a href="https://github.com/jonbarron/jonbarron_website" target="_blank" rel="noopener">Jon Barron's template</a>.</p>
+      </footer>
+    </main>
+  </div>
 
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <!-- Skill highlight bar -->
+  <div class="highlight-bar" role="status" aria-live="polite" hidden>
+    <p class="highlight-text"></p>
+    <div class="highlight-actions">
+      <button type="button" class="hl-prev">Previous</button>
+      <button type="button" class="hl-next">Next</button>
+      <button type="button" class="hl-clear">Clear</button>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite" hidden></div>
 
   <script src="script.js"></script>
 </body>
