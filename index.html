@@ -5,6 +5,7 @@
   <title>Suyash Maniyar</title>
   
   <meta name="author" content="Suyash Maniyar">
+  <meta name="description" content="Suyash Maniyar: MS CS at UMass Amherst, Applied AI and Data Science Co-op at Johnson &amp; Johnson MedTech. LLM post-training, alignment, and applied ML.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -42,19 +43,25 @@
                   </p>
 
                   <p>
-                    I am a Master's student in <b>Computer Science</b> at  
+                    I am a Master's student in <b>Computer Science</b> at
                     <a href="https://www.cics.umass.edu/" target="_blank">University of Massachusetts Amherst</a> (Expected May 2027, CGPA: 4.0/4.0).
-                    I completed my Bachelor of Technology in <b>Electrical Engineering</b> from 
-                    <a href="https://www.iitj.ac.in/" target="_blank">Indian Institute of Technology, Jodhpur</a> (2019-2023).
+                    I completed my Bachelor of Technology in <b>Electrical Engineering</b> from
+                    <a href="https://www.iitj.ac.in/" target="_blank">Indian Institute of Technology, Jodhpur</a> (2019-2023, CGPA: 8.2/10.0).
                   </p>
 
                   <p>
-                    I am currently a <b>Graduate Student Researcher</b> at the 
+                    I am currently an <b>Applied AI and Data Science Co-op</b> at <b>Johnson &amp; Johnson MedTech</b>,
+                    where I build agentic clinical information extraction pipelines, human-in-the-loop annotation tools,
+                    and anomaly detection models on implanted cardiac sensor data.
+                    Before that, I worked as an Advanced Data Science Associate at ZS Associates and an ML Engineer at Decimal Point Analytics.
+                  </p>
+
+                  <p>
+                    My research is on <b>LLM post-training and alignment</b>: reward hacking under confounded RL
+                    (<a href="https://arxiv.org/abs/2608.15445" target="_blank">COLM 2026 Workshop</a>),
+                    the safety geometry of refusal, continual alignment with LoRA, and retrieval + DPO for legal LLMs.
+                    I previously worked on agentic RL self-play for biomedical QA at the
                     <a href="https://bio-nlp.github.io/" target="_blank">BioNLP Lab</a> under <b>Prof. Hong Yu</b>.
-                    My research focuses on <b>ontology-driven self-play for Biomedical LLMs</b>,  
-                    where I design frameworks with dual LLM agents (Q&A) that co-evolve to fill biomedical knowledge gaps 
-                    leveraging ontology data, achieving a 12% performance boost over Supervised Fine Tuning. 
-                    I also work on post-training alignment techniques like DPO and evidence-aligned RL, enhancing factuality by 8%.
                   </p>
 
                   <p style="text-align:center">
@@ -73,42 +80,147 @@
               </tr>
             </tbody>
           </table>
+          <p style="font-size:13px;color:#555;padding:0 2.5%;">
+            <b>Coursework:</b> Data Structures &amp; Algorithms, Advanced NLP, AI Alignment, Systems for Deep Learning, Deep Learning,
+            Machine Learning, DLOps, Computer Networks, Software Engineering, Systems for Data Science
+          </p>
           </section>
 
           <!-- Research & Publications Section -->
           <section id="research" class="animate-on-scroll">
           <h2>🔬 Research & Publications</h2>
-          
-          <h3>Graduate Student Researcher — BioNLP Lab @ UMass Amherst</h3>
-          <p style="margin-top:-10px;"><i>Guide: Prof. Hong Yu | August 2025 – Present</i></p>
-          <ul>
-            <li>Designed an ontology-driven self-play framework where dual LLM agents (Q&A) co-evolve to fill biomedical knowledge gaps leveraging ontology data, achieving 12% performance boost over Supervised Fine Tuning.</li>
-            <li>Implemented post-training alignment techniques like DPO, evidence-aligned RL and enhanced factuality by 8%.</li>
-          </ul>
 
-          <h3>Publications & Research Projects</h3>
-          
+          <h3>Publications & Preprints</h3>
+
+          <!-- Reward Hacking - COLM 2026 Workshop -->
+          <div class="publication-item">
+            <p>
+              <b>Measuring Reward Hacking and Reasoning-Answer Decoupling Under Confounded Optimization</b><br>
+              <i>Abhishek Mishra*, Armaan Sandhu*, <b>Suyash Maniyar*</b></i><br>
+              <i>COLM 2026, AI Measurement Science Workshop | Feb 2026 – May 2026</i><br>
+              <a href="https://arxiv.org/abs/2608.15445" target="_blank">[arXiv]</a>
+              <a href="colm_paper.pdf" target="_blank">[Paper PDF]</a>
+              <a href="AI_Alignment_report.pdf" target="_blank">[Course Report (IPPO)]</a>
+              <a href="https://github.com/armaansandhu26/ippo" target="_blank">[Code]</a>
+            </p>
+            <ul style="margin-top:10px;">
+              <li>Post-trained 10 LLMs (Qwen2.5, Llama 3.x) via GRPO on a confounded reward, inducing reward hacking.</li>
+              <li>Identified a backdoor-like failure arising from fully correct training data that endpoint metrics cannot detect, and designed an evaluation protocol, including reasoning-answer decoupling and out-of-domain probes, to detect it.</li>
+              <li>Red-teamed checkpoints: the hacked model chose the harmful option 84% of the time in the rewarded position vs 4% for controls, and 0% once position-swapped.</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">GRPO</span>
+              <span class="tech-tag">RL Post-Training</span>
+              <span class="tech-tag">Reward Hacking</span>
+              <span class="tech-tag">Red-Teaming</span>
+              <span class="tech-tag">Qwen2.5</span>
+              <span class="tech-tag">Llama 3</span>
+            </div>
+          </div>
+
           <!-- SynSlideGen Publication -->
           <div class="publication-item">
             <p>
-              <b>AI-Generated Lecture Slides for Improving Slide Element Detection and Retrieval</b><br>
+              <b>AI-Generated Lecture Slides for Improving Slide Element Detection and Slide Image Retrieval</b><br>
               <i>ICDAR 2025 | Aug 2024 – Feb 2025</i><br>
               <a href="https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11" target="_blank">[Paper]</a>
               <a href="https://synslidegen.github.io/" target="_blank">[Project Website]</a>
             </p>
-            <p style="margin-top:10px;">
-              Led research on an LLM-driven synthetic slide generation pipeline. Trained models for slide layout detection and image retrieval, delivering SOTA performance.
-            </p>
+            <ul style="margin-top:10px;">
+              <li>Built an LLM-guided synthetic data pipeline (GPT-4, 18 layouts) generating 4,400 auto-labelled slides across 16 element classes with no manual labelling.</li>
+              <li>Fine-tuned CLIP on synthetic data to R@1 43 on real slide retrieval, beating 31k real out-of-domain slides (R@1 31); lifted LayoutLMv3 detection from 27.3 to 33.9 mAP.</li>
+            </ul>
             <div style="text-align:center;margin:15px 0;">
               <a href="https://synslidegen.github.io/" target="_blank">
                 <img src="images/teaser.png" alt="SynSlideGen Teaser" style="width:100%;max-width:700px;border-radius:10px;">
               </a>
             </div>
             <div class="tech-stack">
-              <span class="tech-tag">Python</span>
+              <span class="tech-tag">GPT-4</span>
+              <span class="tech-tag">Synthetic Data</span>
+              <span class="tech-tag">CLIP</span>
+              <span class="tech-tag">LayoutLMv3</span>
               <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">LLMs</span>
-              <span class="tech-tag">Computer Vision</span>
+            </div>
+          </div>
+
+          <!-- Legal LLMs - arXiv -->
+          <div class="publication-item">
+            <p>
+              <b>Enhancing Legal LLMs with Metadata-Enriched Retrieval and DPO</b><br>
+              <i>arXiv preprint | Sept 2025 – Dec 2025</i><br>
+              <a href="https://arxiv.org/abs/2603.19251" target="_blank">[arXiv]</a>
+              <a href="Course_Project.pdf" target="_blank">[Project Report]</a>
+            </p>
+            <ul style="margin-top:10px;">
+              <li>Built hybrid FAISS retrieval fusing dense and BM25 scores, cutting retrieval mismatch from 65% to 10%.</li>
+              <li>Engineered metadata-enriched chunking using case summaries and details, improving recall@10 by 23%.</li>
+              <li>Aligned Llama 3.2 1B via DPO on 3.8K preference pairs, cutting over-refusal from 53.2% to 1.5%.</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">RAG</span>
+              <span class="tech-tag">FAISS</span>
+              <span class="tech-tag">BM25</span>
+              <span class="tech-tag">DPO</span>
+              <span class="tech-tag">Llama 3.2</span>
+              <span class="tech-tag">Legal AI</span>
+            </div>
+          </div>
+
+          <h3>Research Experience</h3>
+
+          <!-- Refusal Direction - TMLR review -->
+          <div class="publication-item">
+            <p>
+              <b>Is the Refusal Direction Mostly Harmfulness?</b><br>
+              <i>Under review at TMLR | Feb 2026 – Aug 2026</i>
+            </p>
+            <ul style="margin-top:10px;">
+              <li>Reproduced the claim that LLMs encode harmfulness and refusal separately on 8 LLMs (Llama-3, Qwen2.5, Gemma-3, 3B to 27B) using nnsight activation interventions.</li>
+              <li>Showed the separation fails: after removing the refusal part, the harm direction keeps 76% of its causal effect.</li>
+              <li>Broke the proposed latent safety guard with a nanoGCG suffix (recall down to 40-74%).</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">Interpretability</span>
+              <span class="tech-tag">nnsight</span>
+              <span class="tech-tag">Activation Steering</span>
+              <span class="tech-tag">GCG Attacks</span>
+              <span class="tech-tag">AI Safety</span>
+            </div>
+          </div>
+
+          <!-- Continual Learning Alignment -->
+          <div class="publication-item">
+            <p>
+              <b>AI Alignment as a Continual Learning Problem</b><br>
+              <i>UMass Amherst | Jan 2026 – May 2026</i>
+            </p>
+            <ul style="margin-top:10px;">
+              <li>Studied whether LLMs can both learn and unlearn behaviors with LoRA, training 6 sequential adapters on paired safety, bias, truthfulness and privacy tasks (PKU-SafeRLHF, BBQ, TruthfulQA, TOFU).</li>
+              <li>Found all 4 merge strategies collapsed refusal to 0.005; built a zero-parameter centroid router that beat the best merge by up to 52 points and held MMLU at 0.406 vs 0.170.</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">LoRA</span>
+              <span class="tech-tag">Continual Learning</span>
+              <span class="tech-tag">Unlearning</span>
+              <span class="tech-tag">Adapter Merging</span>
+            </div>
+          </div>
+
+          <!-- BioNLP Lab -->
+          <div class="publication-item">
+            <p>
+              <b>Agentic RL Self-Play for Biomedical QA</b><br>
+              <i><a href="https://bio-nlp.github.io/" target="_blank">BioNLP Lab</a>, UMass Amherst (Prof. Hong Yu) | Aug 2025 – Dec 2025</i>
+            </p>
+            <ul style="margin-top:10px;">
+              <li>Designed an ontology-driven agentic RL self-play framework with dual Q&amp;A LLM agents, using MCP for tool-grounded verification, improving biomedical QA by 12% over fine-tuning.</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">Self-Play RL</span>
+              <span class="tech-tag">Multi-Agent LLMs</span>
+              <span class="tech-tag">MCP</span>
+              <span class="tech-tag">Biomedical NLP</span>
             </div>
           </div>
 
@@ -135,112 +247,104 @@
           <!-- Hackathons & Projects Section -->
           <section id="hackathons" class="animate-on-scroll">
           <h2>Projects & Hackathons 🏆</h2>
-          
+
           <div class="filter-controls">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="hackathon">Hackathons</button>
-            <button class="filter-btn" data-filter="personal">Personal Projects</button>
+            <button class="filter-btn" data-filter="personal">Projects</button>
           </div>
 
           <div class="projects-container">
-            <!-- Slide Scribe - HackUMass XIII Winner -->
-            <div class="project-card" data-category="hackathon">
+            <!-- EmbedServe -->
+            <div class="project-card" data-category="personal">
               <div class="project-summary">
-                <h4>🥇 Slide Scribe — Winner at HackUMass XIII</h4>
-                <p class="project-date"><i>October 2025</i></p>
-                <p class="project-brief">Built a system enabling visually impaired individuals to access slide content through real-time audio narration.</p>
+                <h4>EmbedServe: High-Performance Embedding Serving System for RecSys</h4>
+                <p class="project-date"><i>UMass Amherst</i></p>
+                <p class="project-brief">A C++ embedding serving system with tiered storage, INT8 quantization and a fused Triton kernel, cutting memory and p99 latency by 3.5×.</p>
                 <button class="expand-btn">Read More</button>
               </div>
               <div class="project-details hidden">
-                <p>Developed an accessibility-focused application that converts presentation slides into real-time audio narration, making educational content accessible to visually impaired users. Won first place at HackUMass XIII.</p>
+                <ul style="margin-top:10px;">
+                  <li>Built a high-performance embedding serving system in C++, integrating RocksDB and dynamic request batching.</li>
+                  <li>Reduced memory by 3.5× and p99 latency by 3.5× at ~2,000 req/s through tiered storage and INT8 quantization.</li>
+                  <li>Achieved 45% of peak GPU bandwidth with a fused Triton kernel, matching TorchRec within 20% p99 latency using 1.55× less memory.</li>
+                </ul>
                 <div class="tech-stack">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Computer Vision</span>
-                  <span class="tech-tag">Text-to-Speech</span>
+                  <span class="tech-tag">C++</span>
+                  <span class="tech-tag">RocksDB</span>
+                  <span class="tech-tag">Triton</span>
+                  <span class="tech-tag">CUDA</span>
+                  <span class="tech-tag">INT8 Quantization</span>
+                  <span class="tech-tag">Recommender Systems</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Scribe - HackUMass XIII Winner -->
+            <div class="project-card" data-category="hackathon">
+              <div class="project-summary">
+                <h4>🥇 Slide Scribe: Winner at HackUMass XIII</h4>
+                <p class="project-date"><i>October 2025</i></p>
+                <p class="project-brief">Real-time voice Q&amp;A over live lecture slides for visually impaired students.</p>
+                <button class="expand-btn">Read More</button>
+              </div>
+              <div class="project-details hidden">
+                <p>Built real-time voice Q&amp;A over live lecture slides for visually impaired students, detecting slide changes via CLIP embedding similarity and answering with Gemini; Flutter client, FastAPI backend. Won first place at HackUMass XIII.</p>
+                <div class="tech-stack">
+                  <span class="tech-tag">CLIP</span>
+                  <span class="tech-tag">Gemini</span>
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">FastAPI</span>
                   <span class="tech-tag">Accessibility</span>
                 </div>
                 <a href="https://devpost.com/software/and_then_there_was_light" target="_blank" class="project-link">View on Devpost →</a>
               </div>
             </div>
 
-            <!-- AI Alignment Final Report -->
-            <div class="project-card" data-category="personal">
-              <div class="project-summary">
-                <h4>IPPO: Adaptive Prompt Constraints for Goal Misgeneralization</h4>
-                <p class="project-date"><i>UMass Amherst | CS 690S: AI Alignment | Spring 2026 | Submitted to <a href="https://colmweb.org/" target="_blank">COLM 2026</a></i></p>
-                <p class="project-brief">Studied Interleaved Prompt-Policy Optimization (IPPO) to mitigate reward hacking and goal misgeneralization during LLM RL post-training.</p>
-                <button class="expand-btn">Read More</button>
-              </div>
-              <div class="project-details hidden">
-                <p>
-                  Final report for CS 690S: AI Alignment (co-authored with Abhishek Mishra, Arihant Barjatya, and Armaan Sandhu).
-                  We investigated whether adaptive prompt-level constraints during RL post-training can counter shortcuts that emerge as model weights change.
-                  This work has been submitted to the <a href="https://colmweb.org/" target="_blank">Conference on Language Modeling (COLM 2026)</a>.
-                </p>
-                <ul style="margin-top:10px;">
-                  <li>Built two synthetic GSM8K multiple-choice datasets: one with positional answer bias and one with spilled-reasoning demonstration copying, to study goal misgeneralization in a controlled setting.</li>
-                  <li>Designed a three-stage curriculum-hacking pipeline that reliably collapses Qwen2.5-1.5B-Instruct onto a near-pure shortcut policy while preserving format compliance, creating a harder substrate for intervention than vanilla shortcut induction.</li>
-                  <li>Evaluated twelve intervention conditions spanning static prompts, adaptive prompt updates, reward shaping, and combined prompt + reward shaping (blind, non-blind, and oracle variants).</li>
-                  <li>Found that prompt-only interventions cannot move a locked answer channel, but combined adaptive prompt + reward shaping consistently reduces shortcut behavior, reducing A-rate from ~1.0 to ~0.64 and improving accuracy from ~0.26 to ~0.32 under full failure-mode disclosure.</li>
-                </ul>
-                <div class="tech-stack">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">GRPO</span>
-                  <span class="tech-tag">RL Post-Training</span>
-                  <span class="tech-tag">Prompt Optimization</span>
-                  <span class="tech-tag">GEPA</span>
-                  <span class="tech-tag">QLoRA</span>
-                  <span class="tech-tag">AI Alignment</span>
-                </div>
-                <a href="AI_Alignment_report.pdf" target="_blank" class="project-link">View Final Report (PDF) →</a>
-                <a href="https://github.com/armaansandhu26/ippo" target="_blank" class="project-link">View on GitHub →</a>
-              </div>
-            </div>
-
-            <!-- AI/ML Course Project -->
-            <div class="project-card" data-category="personal">
-              <div class="project-summary">
-                <h4>Enhancing Legal LLMs through Hybrid Retrieval, Metadata-Enriched RAG Pipelines and Direct Preference Optimization</h4>
-                <p class="project-date"><i>UMass Amherst | Fall 2025</i></p>
-                <p class="project-brief">Research project addressing hallucinations in legal LLMs through improved retrieval and Direct Preference Optimization.</p>
-                <button class="expand-btn">Read More</button>
-              </div>
-              <div class="project-details hidden">
-                <ul style="margin-top:10px;">
-                  <li>Developed metadata-enriched RAG pipelines that inject document metadata (jurisdiction, summaries) into chunks, reducing Document Retrieval Mismatch (DRM) and significantly improving span recall across legal datasets (PrivacyQA, MAUD, Australian Legal QA).</li>
-                  <li>Implemented Direct Preference Optimization (DPO) on LLaMA 3.2 (1B) to address decoder-level hallucinations.</li>
-                  <li>Achieved end-to-end improvements in legal document processing by combining hybrid Dense+BM25 retrieval with DPO training, demonstrating significant factual accuracy gains and selective refusal behavior in privacy policies, M&A contracts, and court judgments.</li>
-                </ul>
-                <div class="tech-stack">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">LLMs</span>
-                  <span class="tech-tag">RAG</span>
-                  <span class="tech-tag">DPO</span>
-                  <span class="tech-tag">Legal AI</span>
-                  <span class="tech-tag">LLaMA</span>
-                </div>
-                <a href="Course_Project.pdf" target="_blank" class="project-link">View Project Report (PDF) →</a>
-              </div>
-            </div>
-
             <!-- UniTrade -->
             <div class="project-card" data-category="personal">
               <div class="project-summary">
-                <h4>UniTrade – Campus Marketplace Web Application</h4>
+                <h4>UniTrade: Campus Marketplace Web Application</h4>
                 <p class="project-date"><i>Sept 2025 – Dec 2025</i></p>
-                <p class="project-brief">Developed a campus-exclusive marketplace with bidding support using React.js, Node.js, Express, SQLite.</p>
+                <p class="project-brief">A campus-only marketplace with live bidding over WebSockets and natural-language search.</p>
                 <button class="expand-btn">Read More</button>
               </div>
               <div class="project-details hidden">
-                <p>Created a full-stack web application for campus marketplace with features including bidding system, personalized search using NLP-based filter generation, and product recommendation engine.</p>
+                <ul style="margin-top:10px;">
+                  <li>Built a campus-only marketplace on a Next.js/TypeScript client and Node/Express REST API.</li>
+                  <li>Implemented live bidding over WebSockets (Socket.IO), pushing bid updates to connected clients in real time.</li>
+                  <li>Added natural-language search using NLP to parse text queries into structured category, price and condition filters.</li>
+                </ul>
                 <div class="tech-stack">
-                  <span class="tech-tag">React.js</span>
-                  <span class="tech-tag">Node.js</span>
-                  <span class="tech-tag">Express</span>
-                  <span class="tech-tag">SQLite</span>
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Node/Express</span>
+                  <span class="tech-tag">Socket.IO</span>
                   <span class="tech-tag">NLP</span>
                 </div>
                 <a href="https://github.com/SuyashManiyar/UniTrade-Campus-Marketplace.git" target="_blank" class="project-link">View on GitHub →</a>
+              </div>
+            </div>
+
+            <!-- Cohort Analysis - B.Tech Project -->
+            <div class="project-card" data-category="personal">
+              <div class="project-summary">
+                <h4>Cohort Analysis &amp; Engagement Segmentation: Education Technology</h4>
+                <p class="project-date"><i>B.Tech Project, IIT Jodhpur</i></p>
+                <p class="project-brief">Engagement classification on Edpuzzle watch-time and quiz analytics to flag low-engagement students for instructor intervention.</p>
+                <button class="expand-btn">Read More</button>
+              </div>
+              <div class="project-details hidden">
+                <ul style="margin-top:10px;">
+                  <li>Built an engagement classification framework on Edpuzzle watch-time and quiz analytics for students enrolled in the Intro to Engineering course, using k-means to flag the low-engagement 10% for instructor intervention.</li>
+                  <li>Evaluated experiments comparing quiz performance between cohorts with and without video assignments.</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">k-means</span>
+                  <span class="tech-tag">Cohort Analysis</span>
+                  <span class="tech-tag">Learning Analytics</span>
+                </div>
               </div>
             </div>
           </div>
@@ -250,31 +354,41 @@
           <section id="experience" class="animate-on-scroll">
           <h2>💼 Professional Experience</h2>
 
+          <h3>Applied AI and Data Science Co-op — Johnson &amp; Johnson MedTech</h3>
+          <p style="margin-top:-10px;"><i>Danvers, MA, USA | July 2026 – Present</i></p>
+          <ul>
+            <li>Built a Django human-in-the-loop annotation platform that pre-fills LLM extractions with bounding-box evidence, letting annotators approve or edit rather than label from scratch, cutting annotation time by 80%.</li>
+            <li>Developed an agentic clinical information extraction pipeline (OCR tool calls, LLM extraction, LLM-as-a-judge) to automate the annotation process, with 97% field accuracy, routing only low-confidence cases back to human review.</li>
+            <li>Deployed on Azure App Service and PostgreSQL Flexible Server, with batch OCR in a Container Apps job scaling to 30 replicas at 5 pages/second; CI/CD through GitLab pipelines.</li>
+            <li>Designed an anomaly detection pipeline on 250 Hz implanted cardiac sensor time-series data, improving Right Ventricular Dysfunction F1 by 7%; developing cardiac output regression from sensor-derived features.</li>
+            <li>Fine-tuned open-weight LLMs and VLMs (Llama 3.2 3B/11B) for medical NER on scanned clinical PDFs.</li>
+          </ul>
+
           <h3>Advanced Data Science Associate — ZS Associates</h3>
           <p style="margin-top:-10px;"><i>Pune, India | November 2024 – July 2025</i></p>
           <ul>
-            <li>Developed and deployed a Switch Prediction Model to predict patients switching from ongoing drug treatments using real-world data and ML/DL models (Bayesian classifier, XGBoost, ANN, TabNet).</li>
-            <li>Delivered 70% precision @ 60% recall; created visualizations, communicated results and SHAP analysis to clients, aiding in optimizing marketing efforts with projected cost savings of up to $500K.</li>
-            <li>Built patient cohorts using SQL and performed patient archetyping via clustering.</li>
-            <li>Engineered a dashboard to visualize model results and automate retraining and inference, enabling one-click MLOps.</li>
+            <li>Developed a Switch Prediction Model to predict patients switching from ongoing drug treatments, leveraging clinical data and an ensemble of ML (Bayes, XGBoost) and DL (TabNet) models, improving F1 score by 11%.</li>
+            <li>Engineered an end-to-end MLOps pipeline on AWS (SageMaker) orchestrated with Airflow and Docker, automating drift detection and retraining across 5+ models, cutting manual deployment effort by 60%.</li>
+            <li>Performed SHAP analysis and aided in optimizing marketing, with projected cost savings of up to $500K.</li>
+            <li>Built patient cohorts from 100M+ claims records by applying business rules in SQL on Amazon Redshift.</li>
+            <li>Quantified the impact of advertisements using A/B testing and Double ML, enabling optimized campaign spend.</li>
           </ul>
 
-          <h3>AI/ML Engineer — Decimal Point Analytics</h3>
+          <h3>ML Engineer — Decimal Point Analytics</h3>
           <p style="margin-top:-10px;"><i>Mumbai, India | July 2023 – October 2024</i></p>
           <ul>
-            <li>Designed a predictive maintenance pipeline to forecast defects in industrial machinery using time-series models.</li>
-            <li>Mentored two interns on a Knowledge Distillation and Few-shot Object Detection project.</li>
-            <li>Built a RAG system for Q&A over PDFs/Excel files using Pinecone, integrating knowledge graphs to get a 9% accuracy boost; used multi-threading to reduce latency by 75%.</li>
-            <li>Created an agent-based hybrid web scraper by finetuning Llama2 (7B/13B) via LoRA for text extraction and using GPT-4 for code generation, reducing downtime from 12 hours to 3 minutes.</li>
-            <li>Developed a DALLE-3 pipeline to generate fabric design patterns from textual specifications.</li>
-            <li>Prototyped multiple GenAI products using open/closed LLMs, FastAPI, Streamlit, and Django.</li>
+            <li>Built an XGBoost supply chain optimization model for a leading FMCG client, forecasting SKU-level demand from lag and rolling-window features engineered in Spark, cutting monthly inventory waste by 15%.</li>
+            <li>Designed an anomaly detection pipeline to predict defects in industrial machinery using time-series data.</li>
+            <li>Shipped a RAG-based chatbot for Q&amp;A, leveraging LangChain and the Pinecone vector database; integrated knowledge graphs, increasing accuracy by 9%. Implemented FAQ response caching, reducing inference cost by 30%.</li>
+            <li>Automated an internal web scraping process by fine-tuning Llama 2 (7B/13B) with LoRA for text-based extraction and leveraging GPT-4 for a code generation pipeline, reducing downtime from 12 hours to 3 minutes.</li>
+            <li>Built a computer vision based car damage segmentation system, improving claim processing efficiency by 75%.</li>
+            <li>Compressed few-shot object detection models by 70% using knowledge distillation, enabling edge deployment.</li>
           </ul>
 
-          <h3>AI Research Intern — Co-op Program — Raapid AI x IIT Jodhpur</h3>
-          <p style="margin-top:-10px;"><i>Remote, India | Sept 2022 – May 2023</i></p>
+          <h3>Machine Learning Intern — RaapidAI</h3>
+          <p style="margin-top:-10px;"><i>Remote, India | Aug 2022 – May 2023</i></p>
           <ul>
-            <li>Engineered a table detection pipeline by finetuning CascadeTabNet and DIT, achieving 76% mAP.</li>
-            <li>Applied novel augmentation strategies, improving mAP by 7% on a private gold-standard dataset.</li>
+            <li>Built a table detection and structure recognition pipeline for medical document images, fine-tuning CascadeTabNet, DETR and DiT to 76% mAP, with augmentation adding 7% on a private gold-standard set.</li>
           </ul>
 
           <h3>AI/ML Intern — Decimal Point Analytics</h3>
@@ -288,7 +402,7 @@
           <!-- Technical Skills Section -->
           <section id="skills" class="animate-on-scroll">
           <h2>🛠️ Technical Skills</h2>
-          
+
           <div class="skills-section">
             <div class="skill-category">
               <h4 class="category-toggle">Languages <span class="toggle-icon">▼</span></h4>
@@ -296,31 +410,65 @@
                 <span class="skill-tag">Python</span>
                 <span class="skill-tag">SQL</span>
                 <span class="skill-tag">C/C++</span>
-                <span class="skill-tag">R</span>
-                <span class="skill-tag">Java</span>
+                <span class="skill-tag">TypeScript</span>
                 <span class="skill-tag">JavaScript</span>
                 <span class="skill-tag">HTML/CSS</span>
-                <span class="skill-tag">MATLAB</span>
+                <span class="skill-tag">R</span>
                 <span class="skill-tag">LaTeX</span>
               </div>
             </div>
 
             <div class="skill-category">
-              <h4 class="category-toggle">Tools & Frameworks <span class="toggle-icon">▼</span></h4>
+              <h4 class="category-toggle">LLMs &amp; Alignment <span class="toggle-icon">▼</span></h4>
               <div class="skill-tags">
-                <span class="skill-tag">VS Code</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">GRPO</span>
+                <span class="skill-tag">DPO</span>
+                <span class="skill-tag">RLHF</span>
+                <span class="skill-tag">SFT</span>
+                <span class="skill-tag">LoRA/QLoRA</span>
+                <span class="skill-tag">Hugging Face (TRL, PEFT)</span>
+                <span class="skill-tag">nnsight</span>
+                <span class="skill-tag">RAG</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4 class="category-toggle">ML &amp; AI <span class="toggle-icon">▼</span></h4>
+              <div class="skill-tags">
                 <span class="skill-tag">PyTorch</span>
                 <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Vector DBs</span>
+                <span class="skill-tag">Kubernetes</span>
                 <span class="skill-tag">Spark</span>
                 <span class="skill-tag">Hadoop</span>
-                <span class="skill-tag">Pandas</span>
-                <span class="skill-tag">Dataiku</span>
-                <span class="skill-tag">MLflow</span>
-                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">ETL Orchestration</span>
+                <span class="skill-tag">SLURM</span>
                 <span class="skill-tag">CUDA</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4 class="category-toggle">Software Engineering <span class="toggle-icon">▼</span></h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">Node/Express</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">Distributed Systems</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4 class="category-toggle">Cloud &amp; Infra <span class="toggle-icon">▼</span></h4>
+              <div class="skill-tags">
+                <span class="skill-tag">AWS (EC2, SageMaker)</span>
+                <span class="skill-tag">GCP</span>
+                <span class="skill-tag">Azure</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">CI/CD (GitLab, Jenkins)</span>
               </div>
             </div>
           </div>

@@ -15,115 +15,157 @@ Master of Science in Computer Science
 Expected May 2027 | CGPA: 4.0/4.0
 
 Indian Institute of Technology, Jodhpur — Jodhpur, India
-Bachelor of Technology Electrical Engineering
-Aug 2019 – May 2023
+Bachelor of Technology in Electrical Engineering
+Aug 2019 – May 2023 | CGPA: 8.2/10.0
 
-Coursework: Calculus, Statistics, Linear Algebra, Data Structures and Algorithms, Machine Learning, Deep Learning, DLOps, Mobile and Pervasive Computing, Advanced NLP, Software Engineering, Research Study
+Coursework: Data Structures & Algorithms, Advanced NLP, AI Alignment, Systems for Deep Learning, Deep Learning, Machine Learning, DLOps, Computer Networks, Software Engineering, Systems for Data Science
 
-Selected Publications
+Publications and Preprints
 
-AI-Generated Lecture Slides for Improving Slide Element Detection and Retrieval, ICDAR 2025 (Paper Link: https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11
-)
+Measuring Reward Hacking and Reasoning-Answer Decoupling Under Confounded Optimization, COLM 2026 — https://arxiv.org/abs/2608.15445
+AI-Generated Lecture Slides for Improving Slide Element Detection and Slide Image Retrieval, ICDAR 2025 — https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11
+Enhancing Legal LLMs with Metadata-Enriched Retrieval and DPO, arXiv preprint — https://arxiv.org/abs/2603.19251
 
-Experience
-Graduate Student Researcher
+Professional Experience
 
-BioNLP Lab @ UMass Amherst — Guide: Prof. Hong Yu
-Amherst, USA | August 2025 – Present
+Applied AI and Data Science Co-op
 
-Designed an ontology-driven self-play framework where dual LLM agents (Q&A) co-evolve to fill biomedical knowledge gaps leveraging ontology data, achieving 12% performance boost over Supervised Fine Tuning.
+Johnson & Johnson MedTech — Danvers, MA, USA
+July 2026 – Present
 
-Implemented post-training alignment techniques like DPO, evidence-aligned RL and enhanced factuality by 8%.
+Built a Django human-in-the-loop annotation platform that pre-fills LLM extractions with bounding-box evidence, letting annotators approve or edit rather than label from scratch, cutting annotation time by 80%.
+
+Developed an agentic clinical information extraction pipeline (OCR tool calls, LLM extraction, LLM-as-a-judge) to automate the annotation process, with 97% field accuracy, routing only low-confidence cases back to human review.
+
+Deployed on Azure App Service and PostgreSQL Flexible Server, with batch OCR in a Container Apps job scaling to 30 replicas at 5 pages/second; CI/CD through GitLab pipelines.
+
+Designed an anomaly detection pipeline on 250 Hz implanted cardiac sensor time-series data, improving Right Ventricular Dysfunction F1 by 7%; developing cardiac output regression from sensor-derived features.
+
+Fine-tuned open-weight LLMs and VLMs (Llama 3.2 3B/11B) for medical NER on scanned clinical PDFs.
 
 Advanced Data Science Associate
 
 ZS Associates — Pune, India
-November 2024 – July 2025
+Nov 2024 – July 2025
 
-Developed and deployed a Switch Prediction Model to predict patients switching from ongoing drug treatments using real-world data and ML/DL models (Bayesian classifier, XGBoost, ANN, TabNet).
+Developed a Switch Prediction Model to predict patients switching from ongoing drug treatments, leveraging clinical data and an ensemble of ML (Bayes, XGBoost) and DL (TabNet) models, improving F1 score by 11%.
 
-Delivered 70% precision @ 60% recall; created visualizations, communicated results and SHAP analysis to clients, aiding in optimizing marketing efforts with projected cost savings of up to $500K.
+Engineered an end-to-end MLOps pipeline on AWS (SageMaker) orchestrated with Airflow and Docker, automating drift detection and retraining across 5+ models, cutting manual deployment effort by 60%.
 
-Built patient cohorts using SQL and performed patient archetyping via clustering.
+Performed SHAP analysis and aided in optimizing marketing with projected cost savings of up to $500K.
 
-Engineered a dashboard to visualize model results and automate retraining and inference, enabling one-click MLOps.
+Built patient cohorts from 100M+ claims records by applying business rules in SQL on Amazon Redshift.
 
-AI/ML Engineer
+Quantified impact of advertisements using A/B testing and Double ML, enabling optimized campaign spend.
+
+ML Engineer
 
 Decimal Point Analytics — Mumbai, India
-July 2023 – October 2024
+July 2023 – Oct 2024
 
-Designed a predictive maintenance pipeline to forecast defects in industrial machinery using time-series models.
+Built an XGBoost supply chain optimization model for a leading FMCG client, forecasting SKU-level demand from lag and rolling-window features engineered in Spark, cutting monthly inventory waste by 15%.
 
-Mentored two interns on a Knowledge Distillation and Few-shot Object Detection project.
+Designed an anomaly detection pipeline to predict defects in industrial machinery using time series data.
 
-Built a RAG system for Q&A over PDFs/Excel files using Pinecone, integrating knowledge graphs to get a 9% accuracy boost; used multi-threading to reduce latency by 75%.
+Shipped a RAG based chatbot for Q&A, leveraging LangChain and Pinecone vector database; integrated knowledge graphs, increasing accuracy by 9%. Implemented FAQ response caching, reducing inference cost by 30%.
 
-Created an agent-based hybrid web scraper by finetuning Llama2 (7B/13B) via LoRA for text extraction and using GPT-4 for code generation, reducing downtime from 12 hours to 3 minutes.
+Automated an internal process of web scraping by fine-tuning Llama 2 (7B/13B) with LoRA for text-based extraction and leveraging GPT-4 for code generation pipeline, reducing downtime from 12 hours to 3 mins.
 
-Developed a DALLE-3 pipeline to generate fabric design patterns from textual specifications.
+Built a computer vision based car damage segmentation system, improving claim processing efficiency by 75%.
 
-Prototyped multiple GenAI products using open/closed LLMs, FastAPI, Streamlit, and Django.
+Compressed few-shot object detection models by 70% using knowledge distillation enabling edge deployment.
 
-AI Research Intern — Co-op Program
+Machine Learning Intern
 
-Raapid AI x IIT Jodhpur — Remote, India
-Sept 2022 – May 2023
+RaapidAI — Remote, India
+Aug 2022 – May 2023
 
-Engineered a table detection pipeline by finetuning CascadeTabNet and DIT, achieving 76% mAP.
+Built a table detection and structure recognition pipeline for medical document images, fine-tuning CascadeTabNet, DETR and DiT to 76% mAP, with augmentation adding 7% on a private gold-standard set.
 
-Applied novel augmentation strategies, improving mAP by 7% on a private gold-standard dataset.
+Research Experience
 
-AI/ML Intern
+Reward Hacking Under Position-Confounded RL — COLM 2026 Workshop (https://arxiv.org/abs/2608.15445)
+Feb 2026 – May 2026
 
-Decimal Point Analytics — Remote, India
-May 2022 – July 2022
+Post-trained 10 LLMs (Qwen2.5, Llama 3.x) via GRPO on confounded reward, inducing reward hacking.
 
-Built an end-to-end accident detection and damage segmentation pipeline for CCTV footage.
+Identified a backdoor-like failure from fully correct training data that endpoint metrics cannot detect, and designed an evaluation protocol including reasoning-answer decoupling, out-of-domain probes to detect it.
 
-Conducted experiments with Vision Transformer, YOLO, and other architectures, securing an F1 score of 87%.
+Red-teamed checkpoints: the hacked model chose the harmful option 84% of the time in the rewarded position vs 4% for controls, and 0% once position-swapped.
+
+Is the Refusal Direction Mostly Harmfulness? — TMLR (review)
+Feb 2026 – Aug 2026
+
+Reproduced the claim that LLMs encode harmfulness and refusal separately on 8 LLMs (Llama-3, Qwen2.5, Gemma-3, 3B to 27B) using nnsight activation interventions.
+
+Showed the separation fails: after removing the refusal part, the harm direction keeps 76% of its causal effect.
+
+Broke the proposed latent safety guard with a nanoGCG suffix (recall down to 40-74%).
+
+AI Alignment as a Continual Learning Problem
+Jan 2026 – May 2026
+
+Studied whether LLMs can both learn and unlearn behaviors with LoRA, training 6 sequential adapters on paired safety, bias, truthfulness and privacy tasks (PKU-SafeRLHF, BBQ, TruthfulQA, TOFU).
+
+Found all 4 merge strategies collapsed refusal to 0.005; built a zero-parameter centroid router that beat the best merge by up to 52 points and held MMLU at 0.406 vs 0.170.
+
+Metadata-Enriched Hybrid RAG + DPO for Legal LLMs — arXiv (https://arxiv.org/abs/2603.19251)
+Sept 2025 – Dec 2025
+
+Built hybrid FAISS retrieval fusing dense and BM25 scores, cutting retrieval mismatch from 65% to 10%.
+
+Engineered metadata-enriched chunking using case summaries and details, improving recall@10 by 23%.
+
+Aligned Llama 3.2 1B via DPO on 3.8K preference pairs, cutting over-refusal from 53.2% to 1.5%.
+
+Agentic RL Self-Play for Biomedical QA — BioNLP Lab (Prof. Hong Yu)
+Aug 2025 – Dec 2025
+
+Designed an ontology-driven agentic RL self-play framework with dual Q&A LLM agents, using MCP for tool-grounded verification, improving biomedical QA by 12% over fine-tuning.
+
+Synthetic Lecture Slides for Detection and Retrieval — ICDAR 2025 (https://link.springer.com/chapter/10.1007/978-3-032-04614-7_11)
+Aug 2024 – Feb 2025
+
+Built an LLM-guided synthetic data pipeline (GPT-4, 18 layouts) generating 4,400 auto-labelled slides across 16 element classes with no manual labelling.
+
+Fine-tuned CLIP on synthetic data to R@1 43 on real slide retrieval, beating 31k real out-of-domain slides (R@1 31); lifted LayoutLMv3 detection from 27.3 to 33.9 mAP.
 
 Projects
 
-Enhancing Legal LLMs through Hybrid Retrieval, Metadata-Enriched RAG Pipelines and Direct Preference Optimization
+EmbedServe — High-Performance Embedding Serving System for Rec Sys
 
-Course Project Report: https://suyashmaniyar.github.io/Course_Project.pdf
+Built a high-performance embedding serving system in C++, integrating RocksDB, and dynamic request batching.
 
-UMass Amherst | Fall 2025
+Reduced memory by 3.5x and p99 latency by 3.5x at ~2,000 req/s through tiered storage, INT8 quantization.
 
-Advanced research project addressing hallucinations in legal LLMs through hybrid retrieval and decoder alignment techniques.
+Achieved 45% of peak GPU bandwidth with a fused Triton kernel, matching TorchRec within 20% p99 latency using 1.55x less memory.
 
-Developed a comprehensive approach to reduce hallucinations in legal Large Language Models by combining metadata-enriched RAG pipelines with Direct Preference Optimization.
-
-UniTrade – Campus Marketplace Web Application
+UniTrade — Campus Marketplace Web Application
 
 GitHub: https://github.com/SuyashManiyar/UniTrade-Campus-Marketplace.git
 
-Sept 2025 – Dec 2025
+Built a campus-only marketplace on a Next.js/TypeScript client and Node/Express REST API.
 
-Developed a campus-exclusive marketplace with bidding support using React.js, Node.js, Express, SQLite.
+Implemented live bidding over WebSockets (Socket.IO), pushing bid updates to connected clients in real time.
 
-Implemented personalized search using NLP-based filter generation and product recommendation.
+Added natural-language search using NLP to parse text queries into structured category, price, condition filters.
 
-Slide Scribe — Winner at HackUMass XIII
+Slide Scribe — Winner, HackUMass XIII
 
 Project Link: https://devpost.com/software/and_then_there_was_light
 
-October 2025
+Built real-time voice Q&A over live lecture slides for visually impaired students, detecting slide changes via CLIP embedding similarity and answering with Gemini; Flutter client, FastAPI backend.
 
-Built a system enabling visually impaired individuals to access slide content through real-time audio narration.
+Cohort Analysis & Engagement Segmentation — Education Technology, B.Tech Project
 
-SynSlideGen
+Built an engagement classification framework on Edpuzzle watch-time and quiz analytics for students enrolled in the Intro to Engineering course, using k-means to flag the low-engagement 10% for instructor intervention.
 
-Project Link: https://synslidegen.github.io/
-
-Aug 2024 – Feb 2025
-
-Led research on an LLM-driven synthetic slide generation pipeline.
-
-Trained models for slide layout detection and image retrieval, delivering SOTA performance leading to publication.
+Evaluated experiments comparing quiz performance between cohorts with and without video assignments.
 
 Technical Skills
 
-Languages: Python, SQL, C/C++, R, Java, JavaScript, HTML/CSS, MATLAB, LaTeX
-Tools: VS Code, Git, Docker, AWS, PyTorch, TensorFlow, Spark, Hadoop, Pandas, Dataiku, MLflow, LangChain, CUDA
+Languages: Python, SQL, C/C++, TypeScript, JavaScript, HTML/CSS, R, LaTeX
+LLMs & Alignment: GRPO, DPO, RLHF, SFT, LoRA/QLoRA, Hugging Face (TRL, PEFT), nnsight, RAG
+Software Engineering: Django, Node/Express, Next.js, React, REST APIs, FastAPI, Flutter, Distributed Systems
+Cloud & Infra: AWS (EC2, SageMaker), GCP, Azure, Docker, CI/CD (GitLab, Jenkins)
+ML & AI: PyTorch, TensorFlow, Vector DBs, Kubernetes, Spark, Hadoop, ETL Orchestration, SLURM, CUDA
