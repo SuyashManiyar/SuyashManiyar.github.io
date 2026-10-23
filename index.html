@@ -31,8 +31,9 @@
         <ul class="rail-nav">
           <li><a href="#about">About</a></li>
           <li><a href="#research">Research</a></li>
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
         </ul>
       </nav>
@@ -105,7 +106,7 @@
 
         <h3 class="subhead">Publications and preprints</h3>
 
-        <article class="entry" id="pub-colm" data-tags="python pytorch grpo lora huggingface">
+        <article class="entry" id="pub-colm">
           <div class="entry-meta">
             <span class="venue">COLM 2026</span>
             <span>AI Measurement Science Workshop</span>
@@ -127,7 +128,7 @@
           </div>
         </article>
 
-        <article class="entry" id="pub-icdar" data-tags="python pytorch">
+        <article class="entry" id="pub-icdar">
           <div class="entry-meta">
             <span class="venue">ICDAR 2025</span>
             <span>Aug 2024 – Feb 2025</span>
@@ -148,7 +149,7 @@
           </div>
         </article>
 
-        <article class="entry" id="pub-legal" data-tags="python pytorch rag dpo vectordb huggingface">
+        <article class="entry" id="pub-legal">
           <div class="entry-meta">
             <span class="venue">arXiv preprint</span>
             <span>Sept – Dec 2025</span>
@@ -169,7 +170,7 @@
 
         <h3 class="subhead">Research experience</h3>
 
-        <article class="entry" id="res-refusal" data-tags="python pytorch nnsight">
+        <article class="entry" id="res-refusal">
           <div class="entry-meta">
             <span class="venue">Under review, TMLR</span>
             <span>Feb – Aug 2026</span>
@@ -184,7 +185,7 @@
           </div>
         </article>
 
-        <article class="entry" id="res-continual" data-tags="python pytorch lora huggingface">
+        <article class="entry" id="res-continual">
           <div class="entry-meta">
             <span class="venue">UMass Amherst</span>
             <span>Jan – May 2026</span>
@@ -198,7 +199,7 @@
           </div>
         </article>
 
-        <article class="entry" id="res-bionlp" data-tags="python pytorch">
+        <article class="entry" id="res-bionlp">
           <div class="entry-meta">
             <span class="venue"><a href="https://bio-nlp.github.io/" target="_blank" rel="noopener">BioNLP Lab</a></span>
             <span>Aug – Dec 2025</span>
@@ -212,7 +213,7 @@
           </div>
         </article>
 
-        <article class="entry" id="res-haptic" data-tags="">
+        <article class="entry" id="res-haptic">
           <div class="entry-meta">
             <span class="venue">INAE-SERB Youth Conclave 2022</span>
             <span>Aug 2022 – Jan 2023</span>
@@ -230,79 +231,11 @@
         </article>
       </section>
 
-      <!-- ===== Projects ===== -->
-      <section id="projects" aria-labelledby="projects-title">
-        <h2 id="projects-title">Projects</h2>
-
-        <article class="entry" id="proj-embedserve" data-tags="cpp cuda distributed pytorch">
-          <div class="entry-meta">
-            <span class="venue">ML systems</span>
-            <span>UMass Amherst</span>
-          </div>
-          <div class="entry-body">
-            <h4 class="entry-title">EmbedServe: embedding serving for recommender systems</h4>
-            <ul class="points">
-              <li>Built a high-performance embedding serving system in C++ with RocksDB and dynamic request batching.</li>
-              <li>Reduced memory by 3.5× and p99 latency by 3.5× at about 2,000 req/s through tiered storage and INT8 quantization.</li>
-              <li>Reached 45% of peak GPU bandwidth with a fused Triton kernel, matching TorchRec within 20% p99 latency while using 1.55× less memory.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="entry" id="proj-slidescribe" data-tags="python fastapi flutter">
-          <div class="entry-meta">
-            <span class="venue">HackUMass XIII</span>
-            <span>Oct 2025</span>
-          </div>
-          <div class="entry-body">
-            <h4 class="entry-title">Slide Scribe <span class="award">Winner</span></h4>
-            <ul class="links">
-              <li><a href="https://devpost.com/software/and_then_there_was_light" target="_blank" rel="noopener">Devpost</a></li>
-            </ul>
-            <ul class="points">
-              <li>Real-time voice Q&amp;A over live lecture slides for visually impaired students. Detects slide changes through CLIP embedding similarity and answers with Gemini, on a Flutter client and FastAPI backend.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="entry" id="proj-unitrade" data-tags="typescript javascript nextjs react node rest">
-          <div class="entry-meta">
-            <span class="venue">Full-stack</span>
-            <span>Sept – Dec 2025</span>
-          </div>
-          <div class="entry-body">
-            <h4 class="entry-title">UniTrade: campus marketplace</h4>
-            <ul class="links">
-              <li><a href="https://github.com/SuyashManiyar/UniTrade-Campus-Marketplace.git" target="_blank" rel="noopener">GitHub</a></li>
-            </ul>
-            <ul class="points">
-              <li>Built a campus-only marketplace on a Next.js/TypeScript client and a Node/Express REST API.</li>
-              <li>Implemented live bidding over WebSockets (Socket.IO), pushing bid updates to connected clients in real time.</li>
-              <li>Added natural-language search that parses text queries into structured category, price and condition filters.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="entry" id="proj-cohort" data-tags="python">
-          <div class="entry-meta">
-            <span class="venue">B.Tech project</span>
-            <span>IIT Jodhpur</span>
-          </div>
-          <div class="entry-body">
-            <h4 class="entry-title">Cohort analysis and engagement segmentation</h4>
-            <ul class="points">
-              <li>Built an engagement classification framework on Edpuzzle watch-time and quiz analytics for the Intro to Engineering course, using k-means to flag the least engaged 10% of students for instructor follow-up.</li>
-              <li>Compared quiz performance between cohorts with and without video assignments.</li>
-            </ul>
-          </div>
-        </article>
-      </section>
-
       <!-- ===== Experience ===== -->
       <section id="experience" aria-labelledby="experience-title">
         <h2 id="experience-title">Experience</h2>
 
-        <article class="entry is-current" id="exp-jnj" data-tags="python django azure docker cicd sql pytorch sft rest">
+        <article class="entry is-current" id="exp-jnj">
           <div class="entry-meta">
             <span class="venue">Jul 2026 – now</span>
             <span>Danvers, MA</span>
@@ -320,7 +253,7 @@
           </div>
         </article>
 
-        <article class="entry" id="exp-zs" data-tags="python sql aws docker etl">
+        <article class="entry" id="exp-zs">
           <div class="entry-meta">
             <span class="venue">Nov 2024 – Jul 2025</span>
             <span>Pune, India</span>
@@ -338,7 +271,7 @@
           </div>
         </article>
 
-        <article class="entry" id="exp-dpa" data-tags="python spark rag vectordb lora pytorch">
+        <article class="entry" id="exp-dpa">
           <div class="entry-meta">
             <span class="venue">Jul 2023 – Oct 2024</span>
             <span>Mumbai, India</span>
@@ -357,7 +290,7 @@
           </div>
         </article>
 
-        <article class="entry" id="exp-raapid" data-tags="python pytorch">
+        <article class="entry" id="exp-raapid">
           <div class="entry-meta">
             <span class="venue">Aug 2022 – May 2023</span>
             <span>Remote</span>
@@ -371,7 +304,7 @@
           </div>
         </article>
 
-        <article class="entry" id="exp-dpa-intern" data-tags="python pytorch">
+        <article class="entry" id="exp-dpa-intern">
           <div class="entry-meta">
             <span class="venue">May – Jul 2022</span>
             <span>Remote</span>
@@ -386,9 +319,81 @@
           </div>
         </article>
 
-        <h3 class="subhead">Education</h3>
+      </section>
 
-        <article class="entry" id="edu-umass" data-tags="">
+      <!-- ===== Projects ===== -->
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+
+        <article class="entry" id="proj-embedserve">
+          <div class="entry-meta">
+            <span class="venue">ML systems</span>
+            <span>UMass Amherst</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">EmbedServe: embedding serving for recommender systems</h4>
+            <ul class="points">
+              <li>Built a high-performance embedding serving system in C++ with RocksDB and dynamic request batching.</li>
+              <li>Reduced memory by 3.5× and p99 latency by 3.5× at about 2,000 req/s through tiered storage and INT8 quantization.</li>
+              <li>Reached 45% of peak GPU bandwidth with a fused Triton kernel, matching TorchRec within 20% p99 latency while using 1.55× less memory.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="proj-slidescribe">
+          <div class="entry-meta">
+            <span class="venue">HackUMass XIII</span>
+            <span>Oct 2025</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Slide Scribe <span class="award">Winner</span></h4>
+            <ul class="links">
+              <li><a href="https://devpost.com/software/and_then_there_was_light" target="_blank" rel="noopener">Devpost</a></li>
+            </ul>
+            <ul class="points">
+              <li>Real-time voice Q&amp;A over live lecture slides for visually impaired students. Detects slide changes through CLIP embedding similarity and answers with Gemini, on a Flutter client and FastAPI backend.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="proj-unitrade">
+          <div class="entry-meta">
+            <span class="venue">Full-stack</span>
+            <span>Sept – Dec 2025</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">UniTrade: campus marketplace</h4>
+            <ul class="links">
+              <li><a href="https://github.com/SuyashManiyar/UniTrade-Campus-Marketplace.git" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+            <ul class="points">
+              <li>Built a campus-only marketplace on a Next.js/TypeScript client and a Node/Express REST API.</li>
+              <li>Implemented live bidding over WebSockets (Socket.IO), pushing bid updates to connected clients in real time.</li>
+              <li>Added natural-language search that parses text queries into structured category, price and condition filters.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry" id="proj-cohort">
+          <div class="entry-meta">
+            <span class="venue">B.Tech project</span>
+            <span>IIT Jodhpur</span>
+          </div>
+          <div class="entry-body">
+            <h4 class="entry-title">Cohort analysis and engagement segmentation</h4>
+            <ul class="points">
+              <li>Built an engagement classification framework on Edpuzzle watch-time and quiz analytics for the Intro to Engineering course, using k-means to flag the least engaged 10% of students for instructor follow-up.</li>
+              <li>Compared quiz performance between cohorts with and without video assignments.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- ===== Education ===== -->
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+
+        <article class="entry" id="edu-umass">
           <div class="entry-meta">
             <span class="venue">2025 – May 2027</span>
             <span>Amherst, MA</span>
@@ -403,7 +408,7 @@
           </div>
         </article>
 
-        <article class="entry" id="edu-iitj" data-tags="">
+        <article class="entry" id="edu-iitj">
           <div class="entry-meta">
             <span class="venue">2019 – 2023</span>
             <span>Jodhpur, India</span>
@@ -418,70 +423,69 @@
       <!-- ===== Skills ===== -->
       <section id="skills" aria-labelledby="skills-title">
         <h2 id="skills-title">Skills</h2>
-        <p class="section-note">Select a skill to highlight the work that uses it. The number shows how many entries match.</p>
 
         <div class="skill-groups">
           <div class="skill-group">
             <h3>LLMs and alignment</h3>
             <ul class="chips">
-              <li><button type="button" class="chip" data-skill="grpo">GRPO</button></li>
-              <li><button type="button" class="chip" data-skill="dpo">DPO</button></li>
-              <li><button type="button" class="chip" data-skill="rlhf">RLHF</button></li>
-              <li><button type="button" class="chip" data-skill="sft">SFT</button></li>
-              <li><button type="button" class="chip" data-skill="lora">LoRA/QLoRA</button></li>
-              <li><button type="button" class="chip" data-skill="huggingface">Hugging Face (TRL, PEFT)</button></li>
-              <li><button type="button" class="chip" data-skill="nnsight">nnsight</button></li>
-              <li><button type="button" class="chip" data-skill="rag">RAG</button></li>
+              <li><span class="chip">GRPO</span></li>
+              <li><span class="chip">DPO</span></li>
+              <li><span class="chip">RLHF</span></li>
+              <li><span class="chip">SFT</span></li>
+              <li><span class="chip">LoRA/QLoRA</span></li>
+              <li><span class="chip">Hugging Face (TRL, PEFT)</span></li>
+              <li><span class="chip">nnsight</span></li>
+              <li><span class="chip">RAG</span></li>
             </ul>
           </div>
           <div class="skill-group">
             <h3>ML and AI</h3>
             <ul class="chips">
-              <li><button type="button" class="chip" data-skill="pytorch">PyTorch</button></li>
-              <li><button type="button" class="chip" data-skill="tensorflow">TensorFlow</button></li>
-              <li><button type="button" class="chip" data-skill="vectordb">Vector DBs</button></li>
-              <li><button type="button" class="chip" data-skill="kubernetes">Kubernetes</button></li>
-              <li><button type="button" class="chip" data-skill="spark">Spark</button></li>
-              <li><button type="button" class="chip" data-skill="hadoop">Hadoop</button></li>
-              <li><button type="button" class="chip" data-skill="etl">ETL orchestration</button></li>
-              <li><button type="button" class="chip" data-skill="slurm">SLURM</button></li>
-              <li><button type="button" class="chip" data-skill="cuda">CUDA</button></li>
+              <li><span class="chip">PyTorch</span></li>
+              <li><span class="chip">TensorFlow</span></li>
+              <li><span class="chip">Vector DBs</span></li>
+              <li><span class="chip">Kubernetes</span></li>
+              <li><span class="chip">Spark</span></li>
+              <li><span class="chip">Hadoop</span></li>
+              <li><span class="chip">ETL orchestration</span></li>
+              <li><span class="chip">SLURM</span></li>
+              <li><span class="chip">CUDA</span></li>
             </ul>
           </div>
           <div class="skill-group">
             <h3>Languages</h3>
             <ul class="chips">
-              <li><button type="button" class="chip" data-skill="python">Python</button></li>
-              <li><button type="button" class="chip" data-skill="sql">SQL</button></li>
-              <li><button type="button" class="chip" data-skill="cpp">C/C++</button></li>
-              <li><button type="button" class="chip" data-skill="typescript">TypeScript</button></li>
-              <li><button type="button" class="chip" data-skill="javascript">JavaScript</button></li>
-              <li><button type="button" class="chip" data-skill="htmlcss">HTML/CSS</button></li>
-              <li><button type="button" class="chip" data-skill="r">R</button></li>
-              <li><button type="button" class="chip" data-skill="latex">LaTeX</button></li>
+              <li><span class="chip">Python</span></li>
+              <li><span class="chip">SQL</span></li>
+              <li><span class="chip">C/C++</span></li>
+              <li><span class="chip">TypeScript</span></li>
+              <li><span class="chip">JavaScript</span></li>
+              <li><span class="chip">HTML/CSS</span></li>
+              <li><span class="chip">R</span></li>
+              <li><span class="chip">LaTeX</span></li>
             </ul>
           </div>
           <div class="skill-group">
             <h3>Software engineering</h3>
             <ul class="chips">
-              <li><button type="button" class="chip" data-skill="django">Django</button></li>
-              <li><button type="button" class="chip" data-skill="node">Node/Express</button></li>
-              <li><button type="button" class="chip" data-skill="nextjs">Next.js</button></li>
-              <li><button type="button" class="chip" data-skill="react">React</button></li>
-              <li><button type="button" class="chip" data-skill="rest">REST APIs</button></li>
-              <li><button type="button" class="chip" data-skill="fastapi">FastAPI</button></li>
-              <li><button type="button" class="chip" data-skill="flutter">Flutter</button></li>
-              <li><button type="button" class="chip" data-skill="distributed">Distributed systems</button></li>
+              <li><span class="chip">Django</span></li>
+              <li><span class="chip">Node/Express</span></li>
+              <li><span class="chip">Next.js</span></li>
+              <li><span class="chip">React</span></li>
+              <li><span class="chip">REST APIs</span></li>
+              <li><span class="chip">FastAPI</span></li>
+              <li><span class="chip">Flutter</span></li>
+              <li><span class="chip">Distributed systems</span></li>
             </ul>
           </div>
           <div class="skill-group">
             <h3>Cloud and infrastructure</h3>
             <ul class="chips">
-              <li><button type="button" class="chip" data-skill="aws">AWS (EC2, SageMaker)</button></li>
-              <li><button type="button" class="chip" data-skill="gcp">GCP</button></li>
-              <li><button type="button" class="chip" data-skill="azure">Azure</button></li>
-              <li><button type="button" class="chip" data-skill="docker">Docker</button></li>
-              <li><button type="button" class="chip" data-skill="cicd">CI/CD (GitLab, Jenkins)</button></li>
+              <li><span class="chip">AWS (EC2, SageMaker)</span></li>
+              <li><span class="chip">GCP</span></li>
+              <li><span class="chip">Azure</span></li>
+              <li><span class="chip">Docker</span></li>
+              <li><span class="chip">CI/CD (GitLab, Jenkins)</span></li>
             </ul>
           </div>
         </div>
@@ -491,16 +495,6 @@
         <p>Last updated October 2026. Originally based on <a href="https://github.com/jonbarron/jonbarron_website" target="_blank" rel="noopener">Jon Barron's template</a>.</p>
       </footer>
     </main>
-  </div>
-
-  <!-- Skill highlight bar -->
-  <div class="highlight-bar" role="status" aria-live="polite" hidden>
-    <p class="highlight-text"></p>
-    <div class="highlight-actions">
-      <button type="button" class="hl-prev">Previous</button>
-      <button type="button" class="hl-next">Next</button>
-      <button type="button" class="hl-clear">Clear</button>
-    </div>
   </div>
 
   <div class="toast" role="status" aria-live="polite" hidden></div>

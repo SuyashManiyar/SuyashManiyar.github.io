@@ -11,7 +11,6 @@
     initScrollSpy();
     initCurve();
     initCollapsibles();
-    initSkillHighlight();
     initCopyEmail();
   });
 
@@ -26,7 +25,7 @@
     el.classList.add('is-focus');
     clearTimeout(el._flashTimer);
     el._flashTimer = setTimeout(function () {
-      if (!el.classList.contains('is-pinned-focus')) el.classList.remove('is-focus');
+      el.classList.remove('is-focus');
     }, 1800);
   }
 
@@ -289,86 +288,6 @@
         btn.textContent = open ? 'Show less' : 'Show ' + hiddenCount + ' more';
       });
     });
-  }
-
-  // ---------- Skill highlighting ----------
-  function initSkillHighlight() {
-    var entries = Array.prototype.slice.call(document.querySelectorAll('.entry[data-tags]'));
-    var chips = Array.prototype.slice.call(document.querySelectorAll('.chip[data-skill]'));
-    var bar = document.querySelector('.highlight-bar');
-    if (!chips.length || !bar) return;
-    var text = bar.querySelector('.highlight-text');
-    var active = null, matches = [], idx = -1;
-
-    function tagsOf(entry) {
-      return (entry.getAttribute('data-tags') || '').split(/\s+/).filter(Boolean);
-    }
-
-    chips.forEach(function (chip) {
-      var key = chip.getAttribute('data-skill');
-      var count = entries.filter(function (e) { return tagsOf(e).indexOf(key) !== -1; }).length;
-      if (!count) {
-        chip.classList.add('is-static');
-        chip.disabled = true;
-        return;
-      }
-      var c = document.createElement('span');
-      c.className = 'count';
-      c.textContent = count;
-      c.setAttribute('aria-hidden', 'true');
-      chip.appendChild(c);
-      chip.setAttribute('aria-pressed', 'false');
-      chip.setAttribute('aria-label', chip.firstChild.textContent.trim() + ', ' + count + (count === 1 ? ' entry' : ' entries'));
-      chip.addEventListener('click', function () {
-        if (active === chip) clear(); else activate(chip, key);
-      });
-    });
-
-    function activate(chip, key) {
-      chips.forEach(function (c) { if (c.hasAttribute('aria-pressed')) c.setAttribute('aria-pressed', 'false'); });
-      chip.setAttribute('aria-pressed', 'true');
-      active = chip;
-      matches = [];
-      entries.forEach(function (e) {
-        var hit = tagsOf(e).indexOf(key) !== -1;
-        e.classList.toggle('is-match', hit);
-        e.classList.remove('is-focus');
-        if (hit) matches.push(e);
-      });
-      idx = -1;
-      document.body.classList.add('is-highlighting');
-      var name = chip.firstChild.textContent.trim();
-      text.innerHTML = '';
-      var b = document.createElement('b'); b.textContent = name;
-      text.appendChild(b);
-      text.appendChild(document.createTextNode(' is used in ' + matches.length + (matches.length === 1 ? ' entry' : ' entries')));
-      bar.hidden = false;
-    }
-
-    function step(dir) {
-      if (!matches.length) return;
-      if (matches[idx]) matches[idx].classList.remove('is-focus', 'is-pinned-focus');
-      idx = (idx + dir + matches.length) % matches.length;
-      var target = matches[idx];
-      target.classList.add('is-pinned-focus');
-      target.classList.add('is-focus');
-      target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
-    }
-
-    function clear() {
-      if (active) active.setAttribute('aria-pressed', 'false');
-      active = null;
-      matches = [];
-      idx = -1;
-      document.body.classList.remove('is-highlighting');
-      entries.forEach(function (e) { e.classList.remove('is-match', 'is-focus', 'is-pinned-focus'); });
-      bar.hidden = true;
-    }
-
-    bar.querySelector('.hl-next').addEventListener('click', function () { step(1); });
-    bar.querySelector('.hl-prev').addEventListener('click', function () { step(-1); });
-    bar.querySelector('.hl-clear').addEventListener('click', clear);
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && active) clear(); });
   }
 
   // ---------- Copy email ----------
