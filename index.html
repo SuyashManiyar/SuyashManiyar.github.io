@@ -6,7 +6,14 @@
   <title>Suyash Maniyar</title>
   <meta name="author" content="Suyash Maniyar">
   <meta name="description" content="Suyash Maniyar, AI engineer and researcher. LLM post-training, alignment and evaluation; agentic pipelines and production ML. MS CS at UMass Amherst, Applied AI Co-op at Johnson &amp; Johnson MedTech.">
-  <link rel="icon" type="image/jpeg" href="images/Suyash2.jpeg">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" href="images/favicon-192.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Suyash Maniyar, AI engineer and researcher">
+  <meta property="og:description" content="LLM post-training, alignment and evaluation; agentic pipelines and production ML.">
+  <meta property="og:url" content="https://suyashmaniyar.github.io/">
+  <meta property="og:image" content="https://suyashmaniyar.github.io/images/profile-640.jpg">
+  <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
@@ -49,6 +56,10 @@
       <section id="about" class="hero" aria-labelledby="about-title">
         <div class="hero-text">
           <h1 id="about-title" class="hero-name">Suyash<br>Maniyar</h1>
+          <p class="hero-role">
+            <span class="now-dot" aria-hidden="true"></span>
+            <span><b>Applied AI and Data Science Co-op</b> at Johnson &amp; Johnson MedTech</span>
+          </p>
           <p class="hero-lede">
             AI engineer and researcher. I study how LLM post-training goes wrong, and I build the systems that put models into production.
           </p>
@@ -65,8 +76,8 @@
           </dl>
 
           <p>
-            I'm an <b>Applied AI and Data Science Co-op at Johnson &amp; Johnson MedTech</b>, where my agentic clinical
-            extraction pipeline reaches 97% field accuracy and my annotation platform cut labelling time by 80%.
+            At J&amp;J MedTech, my agentic clinical extraction pipeline reaches 97% field accuracy and my
+            annotation platform cut labelling time by 80%.
             I'm also a Master's student in Computer Science at
             <a href="https://www.cics.umass.edu/" target="_blank" rel="noopener">UMass Amherst</a>
             (CGPA 4.0/4.0, expected May 2027).
@@ -88,8 +99,12 @@
             <li><a href="https://github.com/SuyashManiyar" target="_blank" rel="noopener">GitHub</a></li>
           </ul>
         </div>
-        <a class="hero-photo" href="images/Suyash2.jpeg">
-          <img src="images/Suyash1.jpeg" alt="Suyash Maniyar standing outdoors at night with city buildings behind him" width="320" height="400">
+        <a class="hero-photo" href="images/Suyash1.jpeg" aria-label="Open full photo">
+          <picture>
+            <source type="image/webp" srcset="images/profile-400.webp 400w, images/profile-640.webp 640w" sizes="(max-width: 640px) 132px, 200px">
+            <img src="images/profile-640.jpg" srcset="images/profile-400.jpg 400w, images/profile-640.jpg 640w" sizes="(max-width: 640px) 132px, 200px"
+                 alt="Suyash Maniyar at night in front of city buildings" width="640" height="800" fetchpriority="high" decoding="async">
+          </picture>
         </a>
 
         <figure class="curve" aria-labelledby="curve-caption">
@@ -117,6 +132,7 @@
             <ul class="links">
               <li><a href="https://arxiv.org/abs/2608.15445" target="_blank" rel="noopener">arXiv</a></li>
               <li><a href="colm_paper.pdf" target="_blank" rel="noopener">Paper PDF</a></li>
+              <li><a href="images/COLM2026_AIMS_poster_34x34.pdf" target="_blank" rel="noopener">Poster</a></li>
               <li><a href="AI_Alignment_report.pdf" target="_blank" rel="noopener">Course report (IPPO)</a></li>
               <li><a href="https://github.com/armaansandhu26/ippo" target="_blank" rel="noopener">Code</a></li>
             </ul>
@@ -125,6 +141,13 @@
               <li>Identified a backdoor-like failure that arises from fully correct training data and that endpoint metrics cannot detect, then designed an evaluation protocol with reasoning-answer decoupling and out-of-domain probes to catch it.</li>
               <li>Red-teamed checkpoints: the hacked model chose the harmful option 84% of the time in the rewarded position, against 4% for controls and 0% once positions were swapped.</li>
             </ul>
+            <figure class="poster">
+              <button type="button" class="poster-open" data-full="images/colm_poster.jpg" aria-label="Enlarge the COLM 2026 poster">
+                <img src="images/colm_poster_sm.jpg" alt="COLM 2026 poster: Measuring Reward Hacking and Reasoning-Answer Decoupling Under Position-Confounded Optimization" width="1100" height="1100" loading="lazy" decoding="async">
+                <span class="poster-hint" aria-hidden="true">View poster</span>
+              </button>
+              <figcaption>Poster, AI Measurement Science Workshop at COLM 2026. Select it to enlarge, or <a href="images/COLM2026_AIMS_poster_34x34.pdf" target="_blank" rel="noopener">open the PDF</a>.</figcaption>
+            </figure>
           </div>
         </article>
 
@@ -144,7 +167,10 @@
               <li>Fine-tuned CLIP on synthetic data to R@1 43 on real slide retrieval, beating 31k real out-of-domain slides (R@1 31), and lifted LayoutLMv3 detection from 27.3 to 33.9 mAP.</li>
             </ul>
             <a class="teaser" href="https://synslidegen.github.io/" target="_blank" rel="noopener">
-              <img src="images/teaser.png" alt="SynSlideGen pipeline: content generation, layout and style, and annotation stages" loading="lazy">
+              <picture>
+                <source type="image/webp" srcset="images/teaser.webp">
+                <img src="images/teaser.png" alt="SynSlideGen pipeline: content generation, layout and style, and annotation stages" width="1863" height="955" loading="lazy" decoding="async">
+              </picture>
             </a>
           </div>
         </article>
@@ -496,6 +522,17 @@
       </footer>
     </main>
   </div>
+
+  <dialog class="lightbox" aria-label="Poster viewer">
+    <div class="lightbox-bar">
+      <span class="lightbox-hint">Select the poster to zoom in or out</span>
+      <a href="images/COLM2026_AIMS_poster_34x34.pdf" target="_blank" rel="noopener">Open PDF</a>
+      <button type="button" class="lightbox-close">Close</button>
+    </div>
+    <div class="lightbox-stage">
+      <img alt="COLM 2026 poster, enlarged">
+    </div>
+  </dialog>
 
   <div class="toast" role="status" aria-live="polite" hidden></div>
 
