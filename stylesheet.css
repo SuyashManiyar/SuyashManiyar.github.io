@@ -231,6 +231,7 @@ h2 {
   color: var(--muted);
 }
 .hero-role b { color: var(--ink); font-weight: 500; }
+.hero-role > span { display: block; }
 @media (min-width: 641px) and (max-width: 1100px) { .hero-role { padding-right: 190px; } }
 
 .hero-lede {
