@@ -12,7 +12,6 @@
     initCurve();
     initCollapsibles();
     initCopyEmail();
-    initPoster();
   });
 
   // ---------- Helpers ----------
@@ -308,40 +307,5 @@
         toast('Email: ' + email);
       }
     });
-  }
-  // ---------- Poster viewer ----------
-  function initPoster() {
-    var dialog = document.querySelector('.lightbox');
-    var openers = document.querySelectorAll('.poster-open');
-    if (!dialog || !openers.length) return;
-    var stage = dialog.querySelector('.lightbox-stage');
-    var img = stage.querySelector('img');
-    var lastOpener = null;
-
-    openers.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        lastOpener = btn;
-        img.src = btn.getAttribute('data-full');
-        stage.classList.remove('is-zoomed');
-        if (dialog.showModal) dialog.showModal(); else window.open(img.src, '_blank');
-      });
-    });
-
-    img.addEventListener('click', function (e) {
-      var zooming = !stage.classList.contains('is-zoomed');
-      var rect = img.getBoundingClientRect();
-      var fx = (e.clientX - rect.left) / rect.width;
-      var fy = (e.clientY - rect.top) / rect.height;
-      stage.classList.toggle('is-zoomed', zooming);
-      if (zooming) {
-        // Keep the clicked spot under the pointer after zooming in.
-        stage.scrollLeft = fx * img.offsetWidth - stage.clientWidth / 2;
-        stage.scrollTop = fy * img.offsetHeight - stage.clientHeight / 2;
-      }
-    });
-
-    dialog.querySelector('.lightbox-close').addEventListener('click', function () { dialog.close(); });
-    dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); });
-    dialog.addEventListener('close', function () { if (lastOpener) lastOpener.focus(); });
   }
 })();
