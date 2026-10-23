@@ -211,82 +211,51 @@ h2 {
 }
 
 /* ---------- Hero ---------- */
-.hero-head {
+.hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 168px;
+  grid-template-columns: minmax(0, 1fr) 180px;
   gap: 40px;
-  align-items: center;
-  padding-bottom: 56px;
+  align-items: start;
 }
 
 .hero-name {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: clamp(40px, 5.2vw, 64px);
-  line-height: 1.02;
-  white-space: nowrap;
-  letter-spacing: -0.04em;
+  font-size: clamp(52px, 8vw, 92px);
+  line-height: 0.9;
+  letter-spacing: -0.045em;
   margin: 0 0 18px;
 }
 
-.wave {
-  display: inline-block;
-  font-size: 0.8em;
-  transform-origin: 70% 80%;
-  animation: wave 1.8s ease-in-out 0.4s 1;
-}
-.hero-name:hover .wave { animation: wave 1.8s ease-in-out 1; }
-
-@keyframes wave {
-  0%, 60%, 100% { transform: rotate(0deg); }
-  10%, 30% { transform: rotate(16deg); }
-  20% { transform: rotate(-8deg); }
-  40% { transform: rotate(-4deg); }
-  50% { transform: rotate(10deg); }
-}
-
 .hero-role {
-  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 26px;
   font-family: var(--sans);
-  font-size: 19px;
-  line-height: 1.55;
+  font-size: 17px;
+  line-height: 1.45;
   color: var(--muted);
-  max-width: 34em;
 }
-.hero-role b { color: var(--ink); font-weight: 500; }
-.hero-role .sep { margin: 0 10px; color: var(--rule); font-weight: 300; }
-@media (min-width: 641px) { .hero-role > span:not(.sep):not(.role-main) { white-space: nowrap; } }
-
-.hero-photo {
-  display: block;
-  width: 168px;
-  aspect-ratio: 1;
+.hero-role b { color: var(--ink); font-weight: 600; }
+.now-dot {
+  flex: none;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  overflow: hidden;
-  background: var(--rule);
-  box-shadow: 0 0 0 1px var(--rule), 0 0 0 6px var(--paper), 0 0 0 7px var(--rule);
+  background: var(--amber);
+  box-shadow: 0 0 0 4px var(--amber-soft);
+  transform: translateY(-1px);
 }
-.hero-photo picture { display: block; width: 100%; height: 100%; }
-.hero-photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 30%;
-  transition: transform 0.4s ease;
-}
-.hero-photo:hover img { transform: scale(1.05); }
-
-.about-body h2 { margin-bottom: 16px; }
 
 .hero-lede {
-  font-size: 22px;
-  line-height: 1.45;
+  font-size: 23px;
+  line-height: 1.4;
   margin: 0 0 24px;
-  max-width: 32em;
+  max-width: 30em;
 }
 
-.about-body p { max-width: 38em; }
+.hero-text p { max-width: 36em; }
 
 .focus {
   margin: 0 0 24px;
@@ -303,7 +272,7 @@ h2 {
 .hero-links {
   list-style: none;
   padding: 0;
-  margin: 26px 0 0;
+  margin: 28px 0 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -335,76 +304,21 @@ h2 {
 }
 .btn-primary:hover { text-decoration: none; filter: brightness(1.08); }
 
-/* ---------- Career curve ---------- */
-.curve {
-  margin: 32px 0 0;
-  position: relative;
+.hero-photo {
+  display: block;
+  margin-top: 8px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--rule);
+  box-shadow: 0 0 0 1px var(--rule), 0 12px 28px -12px rgba(26, 34, 51, 0.35);
 }
-
-.curve-plot { position: relative; }
-
-.curve svg { display: block; width: 100%; height: auto; overflow: visible; }
-
-.curve .axis { stroke: var(--rule); stroke-width: 1; }
-.curve .tick-label {
-  fill: var(--muted);
-  font-family: var(--sans);
-  font-size: 12px;
+.hero-photo picture { display: block; }
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
 }
-.curve .axis-label {
-  fill: var(--muted);
-  font-family: var(--sans);
-  font-size: 12px;
-}
-.curve .raw { fill: none; stroke: var(--accent); stroke-width: 1; opacity: 0.28; }
-.curve .smooth { fill: none; stroke: var(--accent); stroke-width: 2.25; stroke-linecap: round; }
-
-.curve .pt { cursor: pointer; outline: none; }
-.curve .pt circle {
-  fill: var(--surface);
-  stroke: var(--accent);
-  stroke-width: 2;
-  transition: r 0.15s ease;
-}
-.curve .pt .hit { fill: transparent; stroke: none; }
-.curve .pt.is-now circle:not(.hit) { fill: var(--amber); stroke: var(--amber); }
-.curve .pt:hover circle:not(.hit),
-.curve .pt:focus-visible circle:not(.hit),
-.curve .pt.is-active circle:not(.hit) { r: 7; }
-.curve .pt:focus-visible circle:not(.hit) { stroke-width: 3; }
-
-.curve.is-drawing .smooth,
-.curve.is-drawing .raw { transition: stroke-dashoffset 1.6s cubic-bezier(0.3, 0.1, 0.2, 1); }
-.curve .pts { transition: opacity 0.5s ease 1.2s; }
-.curve.is-pending .pts { opacity: 0; }
-
-.curve figcaption {
-  font-family: var(--sans);
-  font-size: 13px;
-  color: var(--muted);
-  margin-top: 6px;
-}
-
-.curve-tip {
-  position: absolute;
-  z-index: 5;
-  min-width: 180px;
-  max-width: 260px;
-  padding: 10px 12px;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-  font-family: var(--sans);
-  font-size: 14px;
-  line-height: 1.35;
-  transform: translate(-50%, calc(-100% - 14px));
-  pointer-events: none;
-}
-.curve-tip.is-pinned { pointer-events: auto; }
-.curve-tip .tip-date { display: block; color: var(--muted); font-size: 12px; margin-bottom: 2px; }
-.curve-tip .tip-title { display: block; font-weight: 600; }
-.curve-tip .tip-link { display: inline-block; margin-top: 6px; font-size: 13px; }
 
 /* ---------- Entries ---------- */
 .entry {
@@ -571,9 +485,6 @@ h2 {
   line-height: 1.4;
 }
 
-/* Brief highlight when jumping to an entry from the career curve */
-.entry.is-focus { box-shadow: inset 3px 0 0 var(--accent); }
-
 /* ---------- Toast ---------- */
 .toast {
   position: fixed;
@@ -646,12 +557,9 @@ h2 {
 @media (max-width: 640px) {
   body { font-size: 16.5px; }
 
-  .hero-head { grid-template-columns: minmax(0, 1fr); gap: 20px; padding-bottom: 40px; }
-  .hero-photo { order: -1; width: 112px; }
-  .hero-role { font-size: 17px; }
-  .hero-name { white-space: normal; }
-  .hero-role .sep { margin: 0 6px; }
-  .hero-lede { font-size: 19px; }
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .hero-photo { order: -1; width: 132px; margin: 0; }
+  .hero-lede { font-size: 20px; }
   .focus div { grid-template-columns: 1fr; gap: 0; padding: 4px 0; }
 
   section { padding-top: 64px; }
@@ -675,7 +583,7 @@ h2 {
 
 /* ---------- Print ---------- */
 @media print {
-  .rail, .curve, .toast, .copy-email, .more-btn { display: none !important; }
+  .rail, .toast, .copy-email, .more-btn { display: none !important; }
   .layout { display: block; }
   .points.is-collapsed li { display: list-item !important; }
 }
