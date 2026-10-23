@@ -356,6 +356,24 @@ h2 {
 }
 .edu-second { margin-top: 14px; }
 
+.entry-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--rule);
+}
+.logo img { width: 42px; height: 42px; object-fit: contain; }
+
+
 .org, .authors {
   margin: 4px 0 0;
   font-size: 16px;
