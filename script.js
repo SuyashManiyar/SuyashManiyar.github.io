@@ -97,20 +97,24 @@
 
   // ---------- Copy email ----------
   function initCopyEmail() {
-    var btn = document.querySelector('.copy-email');
-    if (!btn) return;
-    btn.addEventListener('click', function () {
-      var email = btn.getAttribute('data-email');
-      function done() {
-        btn.textContent = 'Copied';
-        toast('Email address copied');
-        setTimeout(function () { btn.textContent = 'Copy'; }, 1800);
-      }
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(email).then(done, function () { toast('Copy failed. Email: ' + email); });
-      } else {
-        toast('Email: ' + email);
-      }
+    document.querySelectorAll('.copy-email').forEach(function (btn) {
+      var isIcon = btn.classList.contains('copy-icon');
+      btn.addEventListener('click', function () {
+        var email = btn.getAttribute('data-email');
+        function done() {
+          if (!isIcon) {
+            btn.textContent = 'Copied';
+            setTimeout(function () { btn.textContent = 'Copy'; }, 1800);
+          }
+          toast('Email address copied');
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(done, function () { toast('Copy failed. Email: ' + email); });
+        } else {
+          toast('Email: ' + email);
+        }
+      });
     });
   }
+
 })();
